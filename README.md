@@ -1,5 +1,5 @@
-# DSCI-551 (Foundations of Data Management) Grade:A
-
+# DSCI-553 (Foundations and Applications of Data Mining) Grade:A
+I shared all my  materials about USC DSCI-553 in this repository, including past quiz, assignments and competition solution. Note that for each assignment, a maximum of 10% bonus point could be earn by submitting correct Scala implementations.
 
 | No. | Related Topic | Answer | Score |
 | ------------- | ------------- | -------------| -------------|

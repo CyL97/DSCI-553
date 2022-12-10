@@ -1,0 +1,521 @@
+[Executed at: Fri Dec 2 3:05:42 PST 2022]
+
+==================================================
+Task 1 (python) runtime (ms), 5637
+Task 1: 2.0 out of 2
+==================================================
+Task 2 (python) runtime (ms), 16137
+Task 2.1: 2.0 out of 2
+Task 2.2: 3.0 out of 3
+==================================================
+Task 1(Scala) runtime (ms), 9005
+Task 1 Scala:
+==================================================
+task2.scala not found
+Task 2 (Scala) runtime (ms), 2
+Task 2.1 Scala: 0.0
+Task 2.2 Scala: 0.0
+==================================================
+
+22/12/02 03:04:43 WARN Utils: Your hostname, ip-172-31-23-143 resolves to a loopback address: 127.0.0.1; using 172.31.23.143 instead (on interface ens5)
+22/12/02 03:04:43 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/opt/spark/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+:: loading settings :: url = jar:file:/opt/spark/spark-3.1.2-bin-hadoop3.2/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /home/ccc_v1_g_e8373_38434/.ivy2/cache
+The jars for the packages stored in: /home/ccc_v1_g_e8373_38434/.ivy2/jars
+graphframes#graphframes added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-4ba2061e-41f9-433e-86f6-84a0aa2603c5;1.0
+confs: [default]
+found graphframes#graphframes;0.8.2-spark3.1-s_2.12 in spark-packages
+found org.slf4j#slf4j-api;1.7.16 in central
+:: resolution report :: resolve 174ms :: artifacts dl 11ms
+:: modules in use:
+graphframes#graphframes;0.8.2-spark3.1-s_2.12 from spark-packages in [default]
+org.slf4j#slf4j-api;1.7.16 from central in [default]
+---------------------------------------------------------------------
+| | modules || artifacts |
+| conf | number| search|dwnlded|evicted|| number|dwnlded|
+---------------------------------------------------------------------
+| default | 2 | 0 | 0 | 0 || 2 | 0 |
+---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-4ba2061e-41f9-433e-86f6-84a0aa2603c5
+confs: [default]
+0 artifacts copied, 2 already retrieved (0kB/10ms)
+22/12/02 03:04:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/12/02 03:04:45 INFO SparkContext: Running Spark version 3.1.2
+22/12/02 03:04:45 INFO ResourceUtils: ==============================================================
+22/12/02 03:04:45 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/12/02 03:04:45 INFO ResourceUtils: ==============================================================
+22/12/02 03:04:45 INFO SparkContext: Submitted application: task1
+22/12/02 03:04:45 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/12/02 03:04:45 INFO ResourceProfile: Limiting resource is cpu
+22/12/02 03:04:45 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/12/02 03:04:45 INFO SecurityManager: Changing view acls to: ccc_v1_g_e8373_38434
+22/12/02 03:04:45 INFO SecurityManager: Changing modify acls to: ccc_v1_g_e8373_38434
+22/12/02 03:04:45 INFO SecurityManager: Changing view acls groups to:
+22/12/02 03:04:45 INFO SecurityManager: Changing modify acls groups to:
+22/12/02 03:04:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ccc_v1_g_e8373_38434); groups with view permissions: Set(); users with modify permissions: Set(ccc_v1_g_e8373_38434); groups with modify permissions: Set()
+22/12/02 03:04:45 INFO Utils: Successfully started service 'sparkDriver' on port 34490.
+22/12/02 03:04:45 INFO SparkEnv: Registering MapOutputTracker
+22/12/02 03:04:45 INFO SparkEnv: Registering BlockManagerMaster
+22/12/02 03:04:45 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/12/02 03:04:45 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/12/02 03:04:45 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/12/02 03:04:45 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6c3a1d9c-6879-4ce2-a8ff-2dd7c7df6e49
+22/12/02 03:04:45 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/12/02 03:04:45 INFO SparkEnv: Registering OutputCommitCoordinator
+22/12/02 03:04:46 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/12/02 03:04:46 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.23.143:4040
+22/12/02 03:04:46 INFO SparkContext: Added JAR file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar at spark://172.31.23.143:34490/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO SparkContext: Added JAR file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at spark://172.31.23.143:34490/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO SparkContext: Added file file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar at file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO Utils: Copying /home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar
+22/12/02 03:04:46 INFO SparkContext: Added file file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO Utils: Copying /home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/org.slf4j_slf4j-api-1.7.16.jar
+22/12/02 03:04:46 INFO Executor: Starting executor ID driver on host 172.31.23.143
+22/12/02 03:04:46 INFO Executor: Fetching file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO Utils: /home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar has been previously copied to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/org.slf4j_slf4j-api-1.7.16.jar
+22/12/02 03:04:46 INFO Executor: Fetching file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO Utils: /home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar has been previously copied to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar
+22/12/02 03:04:46 INFO Executor: Fetching spark://172.31.23.143:34490/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO TransportClientFactory: Successfully created connection to /172.31.23.143:34490 after 23 ms (0 ms spent in bootstraps)
+22/12/02 03:04:46 INFO Utils: Fetching spark://172.31.23.143:34490/jars/org.slf4j_slf4j-api-1.7.16.jar to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/fetchFileTemp9145315856454504735.tmp
+22/12/02 03:04:46 INFO Utils: /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/fetchFileTemp9145315856454504735.tmp has been previously copied to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/org.slf4j_slf4j-api-1.7.16.jar
+22/12/02 03:04:46 INFO Executor: Adding file:/tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/org.slf4j_slf4j-api-1.7.16.jar to class loader
+22/12/02 03:04:46 INFO Executor: Fetching spark://172.31.23.143:34490/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1669979085592
+22/12/02 03:04:46 INFO Utils: Fetching spark://172.31.23.143:34490/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/fetchFileTemp3082315142853327165.tmp
+22/12/02 03:04:46 INFO Utils: /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/fetchFileTemp3082315142853327165.tmp has been previously copied to /tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar
+22/12/02 03:04:46 INFO Executor: Adding file:/tmp/spark-980ebff7-c1ee-4a62-9779-82c0f994b298/userFiles-76be797e-131a-4a42-a300-dafe85f26417/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar to class loader
+22/12/02 03:04:46 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44357.
+22/12/02 03:04:46 INFO NettyBlockTransferService: Server created on 172.31.23.143:44357
+22/12/02 03:04:46 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/12/02 03:04:46 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.23.143, 44357, None)
+22/12/02 03:04:46 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.23.143:44357 with 434.4 MiB RAM, BlockManagerId(driver, 172.31.23.143, 44357, None)
+22/12/02 03:04:46 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.23.143, 44357, None)
+22/12/02 03:04:46 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.23.143, 44357, None)
+Traceback (most recent call last):
+File "/mnt/data2/students/sub1/ccc_v1_g_e8373_38434/asn1085239_5/asn1085240_1/2107122/7/work/task1.py", line 35, in
+temp = user_bus_dict[candidate[0]] & user_bus_dict[candidate[1]]
+KeyError: 'G9FFvsVtyJ8WryA2DOX-cA'
+22/12/02 03:04:49 WARN Utils: Your hostname, ip-172-31-23-143 resolves to a loopback address: 127.0.0.1; using 172.31.23.143 instead (on interface ens5)
+22/12/02 03:04:49 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/opt/spark/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+22/12/02 03:04:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/12/02 03:04:50 INFO SparkContext: Running Spark version 3.1.2
+22/12/02 03:04:50 INFO ResourceUtils: ==============================================================
+22/12/02 03:04:50 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/12/02 03:04:50 INFO ResourceUtils: ==============================================================
+22/12/02 03:04:50 INFO SparkContext: Submitted application: task2
+22/12/02 03:04:50 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/12/02 03:04:50 INFO ResourceProfile: Limiting resource is cpu
+22/12/02 03:04:50 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/12/02 03:04:50 INFO SecurityManager: Changing view acls to: ccc_v1_g_e8373_38434
+22/12/02 03:04:50 INFO SecurityManager: Changing modify acls to: ccc_v1_g_e8373_38434
+22/12/02 03:04:50 INFO SecurityManager: Changing view acls groups to:
+22/12/02 03:04:50 INFO SecurityManager: Changing modify acls groups to:
+22/12/02 03:04:50 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ccc_v1_g_e8373_38434); groups with view permissions: Set(); users with modify permissions: Set(ccc_v1_g_e8373_38434); groups with modify permissions: Set()
+22/12/02 03:04:50 INFO Utils: Successfully started service 'sparkDriver' on port 39158.
+22/12/02 03:04:50 INFO SparkEnv: Registering MapOutputTracker
+22/12/02 03:04:50 INFO SparkEnv: Registering BlockManagerMaster
+22/12/02 03:04:50 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/12/02 03:04:50 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/12/02 03:04:50 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/12/02 03:04:50 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-9a9d8c5e-d2ba-4b33-8b90-3f6b12c9ed8a
+22/12/02 03:04:50 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/12/02 03:04:50 INFO SparkEnv: Registering OutputCommitCoordinator
+22/12/02 03:04:51 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/12/02 03:04:51 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.23.143:4040
+22/12/02 03:04:51 INFO Executor: Starting executor ID driver on host 172.31.23.143
+22/12/02 03:04:51 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43727.
+22/12/02 03:04:51 INFO NettyBlockTransferService: Server created on 172.31.23.143:43727
+22/12/02 03:04:51 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/12/02 03:04:51 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.23.143, 43727, None)
+22/12/02 03:04:51 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.23.143:43727 with 434.4 MiB RAM, BlockManagerId(driver, 172.31.23.143, 43727, None)
+22/12/02 03:04:51 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.23.143, 43727, None)
+22/12/02 03:04:51 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.23.143, 43727, None)
+Duration: 14.326239347457886
+22/12/02 03:05:05 WARN Utils: Your hostname, ip-172-31-23-143 resolves to a loopback address: 127.0.0.1; using 172.31.23.143 instead (on interface ens5)
+22/12/02 03:05:05 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/opt/spark/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+22/12/02 03:05:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/12/02 03:05:06 INFO SparkContext: Running Spark version 3.1.2
+22/12/02 03:05:06 INFO ResourceUtils: ==============================================================
+22/12/02 03:05:06 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/12/02 03:05:06 INFO ResourceUtils: ==============================================================
+22/12/02 03:05:06 INFO SparkContext: Submitted application: task2
+22/12/02 03:05:06 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/12/02 03:05:06 INFO ResourceProfile: Limiting resource is cpu
+22/12/02 03:05:06 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/12/02 03:05:06 INFO SecurityManager: Changing view acls to: ccc_v1_g_e8373_38434
+22/12/02 03:05:06 INFO SecurityManager: Changing modify acls to: ccc_v1_g_e8373_38434
+22/12/02 03:05:06 INFO SecurityManager: Changing view acls groups to:
+22/12/02 03:05:06 INFO SecurityManager: Changing modify acls groups to:
+22/12/02 03:05:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ccc_v1_g_e8373_38434); groups with view permissions: Set(); users with modify permissions: Set(ccc_v1_g_e8373_38434); groups with modify permissions: Set()
+22/12/02 03:05:07 INFO Utils: Successfully started service 'sparkDriver' on port 40586.
+22/12/02 03:05:07 INFO SparkEnv: Registering MapOutputTracker
+22/12/02 03:05:07 INFO SparkEnv: Registering BlockManagerMaster
+22/12/02 03:05:07 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/12/02 03:05:07 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/12/02 03:05:07 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/12/02 03:05:07 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-94ead564-cc20-44f0-962f-76c6db47a37b
+22/12/02 03:05:07 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/12/02 03:05:07 INFO SparkEnv: Registering OutputCommitCoordinator
+22/12/02 03:05:07 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/12/02 03:05:07 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.23.143:4040
+22/12/02 03:05:07 INFO Executor: Starting executor ID driver on host 172.31.23.143
+22/12/02 03:05:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42793.
+22/12/02 03:05:07 INFO NettyBlockTransferService: Server created on 172.31.23.143:42793
+22/12/02 03:05:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/12/02 03:05:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.23.143, 42793, None)
+22/12/02 03:05:07 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.23.143:42793 with 434.4 MiB RAM, BlockManagerId(driver, 172.31.23.143, 42793, None)
+22/12/02 03:05:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.23.143, 42793, None)
+22/12/02 03:05:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.23.143, 42793, None)
+Duration: 17.517885446548462
+22/12/02 03:05:25 WARN Utils: Your hostname, ip-172-31-23-143 resolves to a loopback address: 127.0.0.1; using 172.31.23.143 instead (on interface ens5)
+22/12/02 03:05:25 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/opt/spark/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+:: loading settings :: url = jar:file:/opt/spark/spark-3.1.2-bin-hadoop3.2/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /home/ccc_v1_g_e8373_38434/.ivy2/cache
+The jars for the packages stored in: /home/ccc_v1_g_e8373_38434/.ivy2/jars
+graphframes#graphframes added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-52e13350-a69d-4755-836b-452c249af53d;1.0
+confs: [default]
+found graphframes#graphframes;0.8.2-spark3.1-s_2.12 in spark-packages
+found org.slf4j#slf4j-api;1.7.16 in central
+:: resolution report :: resolve 162ms :: artifacts dl 11ms
+:: modules in use:
+graphframes#graphframes;0.8.2-spark3.1-s_2.12 from spark-packages in [default]
+org.slf4j#slf4j-api;1.7.16 from central in [default]
+---------------------------------------------------------------------
+| | modules || artifacts |
+| conf | number| search|dwnlded|evicted|| number|dwnlded|
+---------------------------------------------------------------------
+| default | 2 | 0 | 0 | 0 || 2 | 0 |
+---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-52e13350-a69d-4755-836b-452c249af53d
+confs: [default]
+0 artifacts copied, 2 already retrieved (0kB/8ms)
+22/12/02 03:05:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/12/02 03:05:26 INFO SparkContext: Running Spark version 3.1.2
+22/12/02 03:05:26 INFO ResourceUtils: ==============================================================
+22/12/02 03:05:26 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/12/02 03:05:26 INFO ResourceUtils: ==============================================================
+22/12/02 03:05:26 INFO SparkContext: Submitted application: task1
+22/12/02 03:05:26 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/12/02 03:05:26 INFO ResourceProfile: Limiting resource is cpu
+22/12/02 03:05:26 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/12/02 03:05:26 INFO SecurityManager: Changing view acls to: ccc_v1_g_e8373_38434
+22/12/02 03:05:26 INFO SecurityManager: Changing modify acls to: ccc_v1_g_e8373_38434
+22/12/02 03:05:26 INFO SecurityManager: Changing view acls groups to:
+22/12/02 03:05:26 INFO SecurityManager: Changing modify acls groups to:
+22/12/02 03:05:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ccc_v1_g_e8373_38434); groups with view permissions: Set(); users with modify permissions: Set(ccc_v1_g_e8373_38434); groups with modify permissions: Set()
+22/12/02 03:05:26 INFO Utils: Successfully started service 'sparkDriver' on port 38150.
+22/12/02 03:05:26 INFO SparkEnv: Registering MapOutputTracker
+22/12/02 03:05:26 INFO SparkEnv: Registering BlockManagerMaster
+22/12/02 03:05:26 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/12/02 03:05:26 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/12/02 03:05:26 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/12/02 03:05:26 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6950c923-06ef-4157-8c02-ea58ac9df064
+22/12/02 03:05:26 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/12/02 03:05:26 INFO SparkEnv: Registering OutputCommitCoordinator
+22/12/02 03:05:26 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/12/02 03:05:26 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.23.143:4040
+22/12/02 03:05:26 INFO SparkContext: Added JAR file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar at spark://172.31.23.143:38150/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1669979126345
+22/12/02 03:05:26 INFO SparkContext: Added JAR file:///home/ccc_v1_g_e8373_38434/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at spark://172.31.23.143:38150/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1669979126345
+22/12/02 03:05:26 INFO SparkContext: Added JAR file:/mnt/data2/students/sub1/ccc_v1_g_e8373_38434/asn1085239_5/asn1085240_1/2107122/7/work/hw4.jar at spark://172.31.23.143:38150/jars/hw4.jar with timestamp 1669979126345
+22/12/02 03:05:27 INFO Executor: Starting executor ID driver on host 172.31.23.143
+22/12/02 03:05:27 INFO Executor: Fetching spark://172.31.23.143:38150/jars/hw4.jar with timestamp 1669979126345
+22/12/02 03:05:27 INFO TransportClientFactory: Successfully created connection to /172.31.23.143:38150 after 23 ms (0 ms spent in bootstraps)
+22/12/02 03:05:27 INFO Utils: Fetching spark://172.31.23.143:38150/jars/hw4.jar to /tmp/spark-728c8053-2c78-4378-9792-a8e80982a29b/userFiles-7eeaab9f-2135-4256-985e-524955ec80be/fetchFileTemp5015757318589018707.tmp
+22/12/02 03:05:27 INFO Executor: Adding file:/tmp/spark-728c8053-2c78-4378-9792-a8e80982a29b/userFiles-7eeaab9f-2135-4256-985e-524955ec80be/hw4.jar to class loader
+22/12/02 03:05:27 INFO Executor: Fetching spark://172.31.23.143:38150/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1669979126345
+22/12/02 03:05:27 INFO Utils: Fetching spark://172.31.23.143:38150/jars/org.slf4j_slf4j-api-1.7.16.jar to /tmp/spark-728c8053-2c78-4378-9792-a8e80982a29b/userFiles-7eeaab9f-2135-4256-985e-524955ec80be/fetchFileTemp11080271162647578018.tmp
+22/12/02 03:05:27 INFO Executor: Adding file:/tmp/spark-728c8053-2c78-4378-9792-a8e80982a29b/userFiles-7eeaab9f-2135-4256-985e-524955ec80be/org.slf4j_slf4j-api-1.7.16.jar to class loader
+22/12/02 03:05:27 INFO Executor: Fetching spark://172.31.23.143:38150/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1669979126345
+22/12/02 03:05:27 INFO Utils: Fetching spark://172.31.23.143:38150/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar to /tmp/spark-728c8053-2c78-4378-9792-a8e80982a29b/userFiles-7eeaab9f-2135-4256-985e-524955ec80be/fetchFileTemp7895286230656357837.tmp
+22/12/02 03:05:27 INFO Executor: Adding file:/tmp/spark-728c8053-2c78-4378-9792-a8e80982a29b/userFiles-7eeaab9f-2135-4256-985e-524955ec80be/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar to class loader
+22/12/02 03:05:27 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38880.
+22/12/02 03:05:27 INFO NettyBlockTransferService: Server created on 172.31.23.143:38880
+22/12/02 03:05:27 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/12/02 03:05:27 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.23.143, 38880, None)
+22/12/02 03:05:27 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.23.143:38880 with 434.4 MiB RAM, BlockManagerId(driver, 172.31.23.143, 38880, None)
+22/12/02 03:05:27 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.23.143, 38880, None)
+22/12/02 03:05:27 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.23.143, 38880, None)
+22/12/02 03:05:33 ERROR Executor: Exception in task 0.0 in stage 3.0 (TID 6)
+java.util.NoSuchElementException: key not found: NblKGOCuxlHb1oiTXGj_qg
+at scala.collection.MapLike.default(MapLike.scala:235)
+at scala.collection.MapLike.default$(MapLike.scala:234)
+at scala.collection.AbstractMap.default(Map.scala:63)
+at scala.collection.mutable.HashMap.apply(HashMap.scala:69)
+at task1$.$anonfun$main$9(task1.scala:31)
+at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+at scala.collection.Iterator$ConcatIterator.hasNext(Iterator.scala:222)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.agg_doAggregateWithKeys_0$(Unknown Source)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+at org.apache.spark.scheduler.Task.run(Task.scala:131)
+at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+22/12/02 03:05:33 ERROR Executor: Exception in task 2.0 in stage 3.0 (TID 8)
+java.util.NoSuchElementException: key not found: NblKGOCuxlHb1oiTXGj_qg
+at scala.collection.MapLike.default(MapLike.scala:235)
+at scala.collection.MapLike.default$(MapLike.scala:234)
+at scala.collection.AbstractMap.default(Map.scala:63)
+at scala.collection.mutable.HashMap.apply(HashMap.scala:69)
+at task1$.$anonfun$main$9(task1.scala:31)
+at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+at scala.collection.Iterator$ConcatIterator.hasNext(Iterator.scala:222)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.agg_doAggregateWithKeys_0$(Unknown Source)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+at org.apache.spark.scheduler.Task.run(Task.scala:131)
+at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+22/12/02 03:05:33 ERROR Executor: Exception in task 3.0 in stage 3.0 (TID 9)
+java.util.NoSuchElementException: key not found: G9FFvsVtyJ8WryA2DOX-cA
+at scala.collection.MapLike.default(MapLike.scala:235)
+at scala.collection.MapLike.default$(MapLike.scala:234)
+at scala.collection.AbstractMap.default(Map.scala:63)
+at scala.collection.mutable.HashMap.apply(HashMap.scala:69)
+at task1$.$anonfun$main$9(task1.scala:31)
+at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+at scala.collection.Iterator$ConcatIterator.hasNext(Iterator.scala:222)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.agg_doAggregateWithKeys_0$(Unknown Source)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+at org.apache.spark.scheduler.Task.run(Task.scala:131)
+at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+22/12/02 03:05:33 ERROR Executor: Exception in task 1.0 in stage 3.0 (TID 7)
+java.util.NoSuchElementException: key not found: G9FFvsVtyJ8WryA2DOX-cA
+at scala.collection.MapLike.default(MapLike.scala:235)
+at scala.collection.MapLike.default$(MapLike.scala:234)
+at scala.collection.AbstractMap.default(Map.scala:63)
+at scala.collection.mutable.HashMap.apply(HashMap.scala:69)
+at task1$.$anonfun$main$9(task1.scala:31)
+at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+at scala.collection.Iterator$ConcatIterator.hasNext(Iterator.scala:222)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.agg_doAggregateWithKeys_0$(Unknown Source)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+at org.apache.spark.scheduler.Task.run(Task.scala:131)
+at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+22/12/02 03:05:33 ERROR TaskSetManager: Task 2 in stage 3.0 failed 1 times; aborting job
+Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 2 in stage 3.0 failed 1 times, most recent failure: Lost task 2.0 in stage 3.0 (TID 8) (172.31.23.143 executor driver): java.util.NoSuchElementException: key not found: NblKGOCuxlHb1oiTXGj_qg
+at scala.collection.MapLike.default(MapLike.scala:235)
+at scala.collection.MapLike.default$(MapLike.scala:234)
+at scala.collection.AbstractMap.default(Map.scala:63)
+at scala.collection.mutable.HashMap.apply(HashMap.scala:69)
+at task1$.$anonfun$main$9(task1.scala:31)
+at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+at scala.collection.Iterator$ConcatIterator.hasNext(Iterator.scala:222)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.agg_doAggregateWithKeys_0$(Unknown Source)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+at org.apache.spark.scheduler.Task.run(Task.scala:131)
+at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+
+Driver stacktrace:
+at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)
+at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2207)
+at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2206)
+at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2206)
+at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1079)
+at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1079)
+at scala.Option.foreach(Option.scala:407)
+at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1079)
+at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2445)
+at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2387)
+at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2376)
+at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:868)
+at org.apache.spark.SparkContext.runJob(SparkContext.scala:2196)
+at org.apache.spark.SparkContext.runJob(SparkContext.scala:2217)
+at org.apache.spark.SparkContext.runJob(SparkContext.scala:2236)
+at org.apache.spark.SparkContext.runJob(SparkContext.scala:2261)
+at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1030)
+at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+at org.apache.spark.rdd.RDD.withScope(RDD.scala:414)
+at org.apache.spark.rdd.RDD.collect(RDD.scala:1029)
+at org.apache.spark.sql.execution.SparkPlan.executeCollect(SparkPlan.scala:390)
+at org.apache.spark.sql.Dataset.collectFromPlan(Dataset.scala:3696)
+at org.apache.spark.sql.Dataset.$anonfun$collect$1(Dataset.scala:2965)
+at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3687)
+at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3685)
+at org.apache.spark.sql.Dataset.collect(Dataset.scala:2965)
+at org.graphframes.GraphFrame.indexedEdges$lzycompute(GraphFrame.scala:574)
+at org.graphframes.GraphFrame.indexedEdges(GraphFrame.scala:565)
+at org.graphframes.GraphFrame.toGraphX(GraphFrame.scala:188)
+at org.graphframes.GraphFrame.cachedGraphX$lzycompute(GraphFrame.scala:598)
+at org.graphframes.GraphFrame.cachedGraphX(GraphFrame.scala:598)
+at org.graphframes.GraphFrame.cachedTopologyGraphX$lzycompute(GraphFrame.scala:592)
+at org.graphframes.GraphFrame.cachedTopologyGraphX(GraphFrame.scala:591)
+at org.graphframes.lib.LabelPropagation$.org$graphframes$lib$LabelPropagation$$run(LabelPropagation.scala:62)
+at org.graphframes.lib.LabelPropagation.run(LabelPropagation.scala:55)
+at task1$.main(task1.scala:40)
+at task1.main(task1.scala)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:951)
+at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:180)
+at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:203)
+at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:90)
+at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1039)
+at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1048)
+at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: java.util.NoSuchElementException: key not found: NblKGOCuxlHb1oiTXGj_qg
+at scala.collection.MapLike.default(MapLike.scala:235)
+at scala.collection.MapLike.default$(MapLike.scala:234)
+at scala.collection.AbstractMap.default(Map.scala:63)
+at scala.collection.mutable.HashMap.apply(HashMap.scala:69)
+at task1$.$anonfun$main$9(task1.scala:31)
+at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)
+at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:512)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+at scala.collection.Iterator$ConcatIterator.hasNext(Iterator.scala:222)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.agg_doAggregateWithKeys_0$(Unknown Source)
+at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage2.processNext(Unknown Source)
+at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:755)
+at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+at org.apache.spark.scheduler.Task.run(Task.scala:131)
+at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)

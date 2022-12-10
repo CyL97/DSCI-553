@@ -1,0 +1,34 @@
+[Executed at: Tue Nov 22 15:59:53 PST 2022]
+
+Duration: 6.300872564315796
+0.8583333333333333
+Duration: 7.304275035858154
+Duration: 5.561272144317627
+22/11/22 15:58:34 WARN Utils: Your hostname, ip-172-31-23-75 resolves to a loopback address: 127.0.0.1; using 172.31.23.75 instead (on interface ens5)
+22/11/22 15:58:34 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/11/22 15:58:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Duration: 52.160739602
+log4j:WARN No appenders could be found for logger (org.apache.spark.util.ShutdownHookManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+22/11/22 15:59:29 WARN Utils: Your hostname, ip-172-31-23-75 resolves to a loopback address: 127.0.0.1; using 172.31.23.75 instead (on interface ens5)
+22/11/22 15:59:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/11/22 15:59:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+0.8839742164925539
+Duration: 8.801163329
+log4j:WARN No appenders could be found for logger (org.apache.spark.util.ShutdownHookManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+22/11/22 15:59:40 WARN Utils: Your hostname, ip-172-31-23-75 resolves to a loopback address: 127.0.0.1; using 172.31.23.75 instead (on interface ens5)
+22/11/22 15:59:40 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/11/22 15:59:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Duration: 6.859344735
+log4j:WARN No appenders could be found for logger (org.apache.spark.util.ShutdownHookManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+task1, 2.5
+task2, 2.5
+task3, 2
+task1_scala, 0.25
+task2_scala, 0.25
+task3_scala, 0.2

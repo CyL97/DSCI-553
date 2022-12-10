@@ -1,0 +1,1030 @@
+[Executed at: Sat Oct 22 21:57:26 PDT 2022]
+
+========================= Task 2_2 Python =========================
+task2_2, 1
+========================= Task 2_3 Python =========================
+task2_3, 2
+========================= Task 2_2 Scala =========================
+task2_2.scala not found
+========================= Task 2_3 Scala =========================
+task2_3.scala not found
+
+22/10/22 21:43:07 WARN Utils: Your hostname, ip-172-31-26-236 resolves to a loopback address: 127.0.0.1; using 172.31.26.236 instead (on interface ens5)
+22/10/22 21:43:07 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/10/22 21:43:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/10/22 21:43:10 INFO SparkContext: Running Spark version 3.1.2
+22/10/22 21:43:10 INFO ResourceUtils: ==============================================================
+22/10/22 21:43:10 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/10/22 21:43:10 INFO ResourceUtils: ==============================================================
+22/10/22 21:43:10 INFO SparkContext: Submitted application: task2_2
+22/10/22 21:43:10 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/10/22 21:43:10 INFO ResourceProfile: Limiting resource is cpu
+22/10/22 21:43:10 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/10/22 21:43:10 INFO SecurityManager: Changing view acls to: ccc_v1_g_f0ed6_37139
+22/10/22 21:43:10 INFO SecurityManager: Changing modify acls to: ccc_v1_g_f0ed6_37139
+22/10/22 21:43:10 INFO SecurityManager: Changing view acls groups to:
+22/10/22 21:43:10 INFO SecurityManager: Changing modify acls groups to:
+22/10/22 21:43:10 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ccc_v1_g_f0ed6_37139); groups with view permissions: Set(); users with modify permissions: Set(ccc_v1_g_f0ed6_37139); groups with modify permissions: Set()
+22/10/22 21:43:10 INFO Utils: Successfully started service 'sparkDriver' on port 33388.
+22/10/22 21:43:10 INFO SparkEnv: Registering MapOutputTracker
+22/10/22 21:43:10 INFO SparkEnv: Registering BlockManagerMaster
+22/10/22 21:43:10 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/10/22 21:43:10 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/10/22 21:43:10 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/10/22 21:43:10 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-45882c29-9448-47e2-9bc5-20dcff188962
+22/10/22 21:43:10 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+22/10/22 21:43:10 INFO SparkEnv: Registering OutputCommitCoordinator
+22/10/22 21:43:11 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/10/22 21:43:11 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.26.236:4040
+22/10/22 21:43:11 INFO Executor: Starting executor ID driver on host 172.31.26.236
+22/10/22 21:43:11 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46611.
+22/10/22 21:43:11 INFO NettyBlockTransferService: Server created on 172.31.26.236:46611
+22/10/22 21:43:11 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/10/22 21:43:11 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.26.236, 46611, None)
+22/10/22 21:43:11 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.26.236:46611 with 366.3 MiB RAM, BlockManagerId(driver, 172.31.26.236, 46611, None)
+22/10/22 21:43:11 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.26.236, 46611, None)
+22/10/22 21:43:11 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.26.236, 46611, None)
+22/10/22 21:43:12 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 293.9 KiB, free 366.0 MiB)
+22/10/22 21:43:13 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 366.0 MiB)
+22/10/22 21:43:13 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.31.26.236:46611 (size: 27.0 KiB, free: 366.3 MiB)
+22/10/22 21:43:13 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+22/10/22 21:43:13 INFO FileInputFormat: Total input files to process : 1
+22/10/22 21:43:13 INFO SparkContext: Starting job: runJob at PythonRDD.scala:166
+22/10/22 21:43:13 INFO DAGScheduler: Got job 0 (runJob at PythonRDD.scala:166) with 1 output partitions
+22/10/22 21:43:13 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at PythonRDD.scala:166)
+22/10/22 21:43:13 INFO DAGScheduler: Parents of final stage: List()
+22/10/22 21:43:13 INFO DAGScheduler: Missing parents: List()
+22/10/22 21:43:13 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:53), which has no missing parents
+22/10/22 21:43:13 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 6.8 KiB, free 366.0 MiB)
+22/10/22 21:43:13 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 366.0 MiB)
+22/10/22 21:43:13 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.31.26.236:46611 (size: 4.2 KiB, free: 366.3 MiB)
+22/10/22 21:43:13 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:13 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+22/10/22 21:43:13 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+22/10/22 21:43:13 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4585 bytes) taskResourceAssignments Map()
+22/10/22 21:43:13 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/10/22 21:43:14 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/yelp_train.csv:0+11396363
+22/10/22 21:43:15 INFO PythonRunner: Times: total = 747, boot = 669, init = 78, finish = 0
+22/10/22 21:43:15 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1423 bytes result sent to driver
+22/10/22 21:43:15 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1458 ms on 172.31.26.236 (executor driver) (1/1)
+22/10/22 21:43:15 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+22/10/22 21:43:15 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 40876
+22/10/22 21:43:15 INFO DAGScheduler: ResultStage 0 (runJob at PythonRDD.scala:166) finished in 1.743 s
+22/10/22 21:43:15 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:15 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+22/10/22 21:43:15 INFO DAGScheduler: Job 0 finished: runJob at PythonRDD.scala:166, took 1.822329 s
+22/10/22 21:43:15 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 293.9 KiB, free 365.7 MiB)
+22/10/22 21:43:15 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 365.7 MiB)
+22/10/22 21:43:15 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.31.26.236:46611 (size: 27.0 KiB, free: 366.2 MiB)
+22/10/22 21:43:15 INFO SparkContext: Created broadcast 2 from textFile at NativeMethodAccessorImpl.java:0
+22/10/22 21:43:15 INFO FileInputFormat: Total input files to process : 1
+22/10/22 21:43:15 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24
+22/10/22 21:43:15 INFO DAGScheduler: Registering RDD 6 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:22) as input to shuffle 0
+22/10/22 21:43:15 INFO DAGScheduler: Got job 1 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24) with 14 output partitions
+22/10/22 21:43:15 INFO DAGScheduler: Final stage: ResultStage 2 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24)
+22/10/22 21:43:15 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+22/10/22 21:43:15 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+22/10/22 21:43:15 INFO DAGScheduler: Submitting ShuffleMapStage 1 (PairwiseRDD[6] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:22), which has no missing parents
+22/10/22 21:43:15 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 12.3 KiB, free 365.7 MiB)
+22/10/22 21:43:15 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 7.4 KiB, free 365.6 MiB)
+22/10/22 21:43:15 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.31.26.236:46611 (size: 7.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:15 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:15 INFO DAGScheduler: Submitting 14 missing tasks from ShuffleMapStage 1 (PairwiseRDD[6] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:22) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
+22/10/22 21:43:15 INFO TaskSchedulerImpl: Adding task set 1.0 with 14 tasks resource profile 0
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (172.31.26.236, executor driver, partition 1, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (172.31.26.236, executor driver, partition 2, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (172.31.26.236, executor driver, partition 3, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (172.31.26.236, executor driver, partition 4, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (172.31.26.236, executor driver, partition 5, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (172.31.26.236, executor driver, partition 6, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (172.31.26.236, executor driver, partition 7, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:15 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+22/10/22 21:43:15 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+22/10/22 21:43:15 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+22/10/22 21:43:15 INFO Executor: Running task 5.0 in stage 1.0 (TID 6)
+22/10/22 21:43:15 INFO Executor: Running task 4.0 in stage 1.0 (TID 5)
+22/10/22 21:43:15 INFO Executor: Running task 6.0 in stage 1.0 (TID 7)
+22/10/22 21:43:15 INFO Executor: Running task 7.0 in stage 1.0 (TID 8)
+22/10/22 21:43:15 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:201326592+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:167772160+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:33554432+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:134217728+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:0+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:67108864+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:234881024+33554432
+22/10/22 21:43:15 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:100663296+33554432
+22/10/22 21:43:16 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 172.31.26.236:46611 in memory (size: 4.2 KiB, free: 366.2 MiB)
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 1591, boot = 17, init = 140, finish = 1434
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 2135, boot = 42, init = 130, finish = 1963
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 1590, boot = 19, init = 16, finish = 1555
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 2138, boot = 190, init = 135, finish = 1813
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 1913, boot = 23, init = 8, finish = 1882
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 2069, boot = 29, init = 192, finish = 1848
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 2047, boot = 118, init = 106, finish = 1823
+22/10/22 21:43:18 INFO PythonRunner: Times: total = 2179, boot = 187, init = 56, finish = 1936
+22/10/22 21:43:18 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1668 bytes result sent to driver
+22/10/22 21:43:18 INFO Executor: Finished task 4.0 in stage 1.0 (TID 5). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 9) (172.31.26.236, executor driver, partition 8, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:18 INFO Executor: Running task 8.0 in stage 1.0 (TID 9)
+22/10/22 21:43:18 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 10) (172.31.26.236, executor driver, partition 9, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2748 ms on 172.31.26.236 (executor driver) (1/14)
+22/10/22 21:43:18 INFO Executor: Running task 9.0 in stage 1.0 (TID 10)
+22/10/22 21:43:18 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:268435456+33554432
+22/10/22 21:43:18 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:301989888+33554432
+22/10/22 21:43:18 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 11) (172.31.26.236, executor driver, partition 10, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:18 INFO Executor: Running task 10.0 in stage 1.0 (TID 11)
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 2759 ms on 172.31.26.236 (executor driver) (2/14)
+22/10/22 21:43:18 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:335544320+33554432
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 2767 ms on 172.31.26.236 (executor driver) (3/14)
+22/10/22 21:43:18 INFO Executor: Finished task 5.0 in stage 1.0 (TID 6). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO Executor: Finished task 6.0 in stage 1.0 (TID 7). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO Executor: Finished task 7.0 in stage 1.0 (TID 8). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 1625 bytes result sent to driver
+22/10/22 21:43:18 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 12) (172.31.26.236, executor driver, partition 11, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:18 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 13) (172.31.26.236, executor driver, partition 12, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:18 INFO Executor: Running task 12.0 in stage 1.0 (TID 13)
+22/10/22 21:43:18 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 14) (172.31.26.236, executor driver, partition 13, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+22/10/22 21:43:18 INFO Executor: Running task 13.0 in stage 1.0 (TID 14)
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 2805 ms on 172.31.26.236 (executor driver) (4/14)
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 2804 ms on 172.31.26.236 (executor driver) (5/14)
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 2805 ms on 172.31.26.236 (executor driver) (6/14)
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 2812 ms on 172.31.26.236 (executor driver) (7/14)
+22/10/22 21:43:18 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 2814 ms on 172.31.26.236 (executor driver) (8/14)
+22/10/22 21:43:18 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:402653184+33554432
+22/10/22 21:43:18 INFO Executor: Running task 11.0 in stage 1.0 (TID 12)
+22/10/22 21:43:18 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:369098752+33554432
+22/10/22 21:43:18 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/review_train.json:436207616+34380203
+22/10/22 21:43:19 INFO PythonRunner: Times: total = 1334, boot = -523, init = 564, finish = 1293
+22/10/22 21:43:19 INFO Executor: Finished task 10.0 in stage 1.0 (TID 11). 1625 bytes result sent to driver
+22/10/22 21:43:19 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 11) in 1369 ms on 172.31.26.236 (executor driver) (9/14)
+22/10/22 21:43:19 INFO PythonRunner: Times: total = 1347, boot = -1080, init = 1137, finish = 1290
+22/10/22 21:43:19 INFO Executor: Finished task 9.0 in stage 1.0 (TID 10). 1625 bytes result sent to driver
+22/10/22 21:43:19 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 10) in 1396 ms on 172.31.26.236 (executor driver) (10/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 1728, boot = -1068, init = 1085, finish = 1711
+22/10/22 21:43:20 INFO Executor: Finished task 8.0 in stage 1.0 (TID 9). 1625 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 9) in 1786 ms on 172.31.26.236 (executor driver) (11/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 1714, boot = -556, init = 751, finish = 1519
+22/10/22 21:43:20 INFO Executor: Finished task 12.0 in stage 1.0 (TID 13). 1625 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 13) in 1742 ms on 172.31.26.236 (executor driver) (12/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 1692, boot = -822, init = 912, finish = 1602
+22/10/22 21:43:20 INFO Executor: Finished task 11.0 in stage 1.0 (TID 12). 1625 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 12) in 1753 ms on 172.31.26.236 (executor driver) (13/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 1752, boot = -703, init = 791, finish = 1664
+22/10/22 21:43:20 INFO Executor: Finished task 13.0 in stage 1.0 (TID 14). 1625 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 14) in 1859 ms on 172.31.26.236 (executor driver) (14/14)
+22/10/22 21:43:20 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+22/10/22 21:43:20 INFO DAGScheduler: ShuffleMapStage 1 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:22) finished in 4.737 s
+22/10/22 21:43:20 INFO DAGScheduler: looking for newly runnable stages
+22/10/22 21:43:20 INFO DAGScheduler: running: Set()
+22/10/22 21:43:20 INFO DAGScheduler: waiting: Set(ResultStage 2)
+22/10/22 21:43:20 INFO DAGScheduler: failed: Set()
+22/10/22 21:43:20 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[9] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24), which has no missing parents
+22/10/22 21:43:20 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 9.5 KiB, free 365.6 MiB)
+22/10/22 21:43:20 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.4 KiB, free 365.6 MiB)
+22/10/22 21:43:20 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.31.26.236:46611 (size: 5.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:20 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:20 INFO DAGScheduler: Submitting 14 missing tasks from ResultStage 2 (PythonRDD[9] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13))
+22/10/22 21:43:20 INFO TaskSchedulerImpl: Adding task set 2.0 with 14 tasks resource profile 0
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 15) (172.31.26.236, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 16) (172.31.26.236, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 17) (172.31.26.236, executor driver, partition 2, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 18) (172.31.26.236, executor driver, partition 3, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 4.0 in stage 2.0 (TID 19) (172.31.26.236, executor driver, partition 4, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 5.0 in stage 2.0 (TID 20) (172.31.26.236, executor driver, partition 5, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 6.0 in stage 2.0 (TID 21) (172.31.26.236, executor driver, partition 6, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 7.0 in stage 2.0 (TID 22) (172.31.26.236, executor driver, partition 7, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO Executor: Running task 0.0 in stage 2.0 (TID 15)
+22/10/22 21:43:20 INFO Executor: Running task 1.0 in stage 2.0 (TID 16)
+22/10/22 21:43:20 INFO Executor: Running task 2.0 in stage 2.0 (TID 17)
+22/10/22 21:43:20 INFO Executor: Running task 3.0 in stage 2.0 (TID 18)
+22/10/22 21:43:20 INFO Executor: Running task 4.0 in stage 2.0 (TID 19)
+22/10/22 21:43:20 INFO Executor: Running task 6.0 in stage 2.0 (TID 21)
+22/10/22 21:43:20 INFO Executor: Running task 5.0 in stage 2.0 (TID 20)
+22/10/22 21:43:20 INFO Executor: Running task 7.0 in stage 2.0 (TID 22)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (687.6 KiB) non-empty blocks including 14 (687.6 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (655.1 KiB) non-empty blocks including 14 (655.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (655.1 KiB) non-empty blocks including 14 (655.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 22 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (692.2 KiB) non-empty blocks including 14 (692.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 37 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (633.5 KiB) non-empty blocks including 14 (633.5 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 20 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (706.2 KiB) non-empty blocks including 14 (706.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 33 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (678.3 KiB) non-empty blocks including 14 (678.3 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 24 ms
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (650.4 KiB) non-empty blocks including 14 (650.4 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 30 ms
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 164, boot = -295, init = 344, finish = 115
+22/10/22 21:43:20 INFO Executor: Finished task 6.0 in stage 2.0 (TID 21). 931605 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 8.0 in stage 2.0 (TID 23) (172.31.26.236, executor driver, partition 8, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 6.0 in stage 2.0 (TID 21) in 289 ms on 172.31.26.236 (executor driver) (1/14)
+22/10/22 21:43:20 INFO Executor: Running task 8.0 in stage 2.0 (TID 23)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (655.1 KiB) non-empty blocks including 14 (655.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 178, boot = -160, init = 201, finish = 137
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 181, boot = -689, init = 744, finish = 126
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 212, boot = -241, init = 292, finish = 161
+22/10/22 21:43:20 INFO Executor: Finished task 4.0 in stage 2.0 (TID 19). 1003198 bytes result sent to driver
+22/10/22 21:43:20 INFO Executor: Finished task 7.0 in stage 2.0 (TID 22). 1033838 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 9.0 in stage 2.0 (TID 24) (172.31.26.236, executor driver, partition 9, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO MemoryStore: Block taskresult_20 stored as bytes in memory (estimated size 1048.3 KiB, free 364.6 MiB)
+22/10/22 21:43:20 INFO Executor: Running task 9.0 in stage 2.0 (TID 24)
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 10.0 in stage 2.0 (TID 25) (172.31.26.236, executor driver, partition 10, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO BlockManagerInfo: Added taskresult_20 in memory on 172.31.26.236:46611 (size: 1048.3 KiB, free: 365.2 MiB)
+22/10/22 21:43:20 INFO Executor: Running task 10.0 in stage 2.0 (TID 25)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (650.8 KiB) non-empty blocks including 14 (650.8 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/10/22 21:43:20 INFO Executor: Finished task 5.0 in stage 2.0 (TID 20). 1073504 bytes result sent via BlockManager)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (655.1 KiB) non-empty blocks including 14 (655.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 5 ms
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 246, boot = -2657, init = 2722, finish = 181
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 244, boot = -275, init = 344, finish = 175
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 11.0 in stage 2.0 (TID 26) (172.31.26.236, executor driver, partition 11, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 258, boot = -714, init = 759, finish = 213
+22/10/22 21:43:20 INFO Executor: Running task 11.0 in stage 2.0 (TID 26)
+22/10/22 21:43:20 INFO Executor: Finished task 2.0 in stage 2.0 (TID 17). 1023988 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 7.0 in stage 2.0 (TID 22) in 378 ms on 172.31.26.236 (executor driver) (2/14)
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 4.0 in stage 2.0 (TID 19) in 380 ms on 172.31.26.236 (executor driver) (3/14)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (669.0 KiB) non-empty blocks including 14 (669.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 12.0 in stage 2.0 (TID 27) (172.31.26.236, executor driver, partition 12, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO Executor: Running task 12.0 in stage 2.0 (TID 27)
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 17) in 430 ms on 172.31.26.236 (executor driver) (4/14)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (655.1 KiB) non-empty blocks including 14 (655.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/10/22 21:43:20 INFO Executor: Finished task 0.0 in stage 2.0 (TID 15). 1018872 bytes result sent to driver
+22/10/22 21:43:20 INFO Executor: Finished task 1.0 in stage 2.0 (TID 16). 998233 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Starting task 13.0 in stage 2.0 (TID 28) (172.31.26.236, executor driver, partition 13, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 337, boot = -2544, init = 2681, finish = 200
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 15) in 474 ms on 172.31.26.236 (executor driver) (5/14)
+22/10/22 21:43:20 INFO Executor: Running task 13.0 in stage 2.0 (TID 28)
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Getting 14 (673.7 KiB) non-empty blocks including 14 (673.7 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+22/10/22 21:43:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 16) in 508 ms on 172.31.26.236 (executor driver) (6/14)
+22/10/22 21:43:20 INFO Executor: Finished task 3.0 in stage 2.0 (TID 18). 992737 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 18) in 513 ms on 172.31.26.236 (executor driver) (7/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 228, boot = 38, init = 1, finish = 189
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 176, boot = -29, init = 43, finish = 162
+22/10/22 21:43:20 INFO Executor: Finished task 8.0 in stage 2.0 (TID 23). 1024942 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 8.0 in stage 2.0 (TID 23) in 244 ms on 172.31.26.236 (executor driver) (8/14)
+22/10/22 21:43:20 INFO Executor: Finished task 9.0 in stage 2.0 (TID 24). 974323 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 9.0 in stage 2.0 (TID 24) in 208 ms on 172.31.26.236 (executor driver) (9/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 196, boot = -36, init = 65, finish = 167
+22/10/22 21:43:20 INFO Executor: Finished task 10.0 in stage 2.0 (TID 25). 986743 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 10.0 in stage 2.0 (TID 25) in 217 ms on 172.31.26.236 (executor driver) (10/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 169, boot = -70, init = 114, finish = 125
+22/10/22 21:43:20 INFO Executor: Finished task 11.0 in stage 2.0 (TID 26). 1019499 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 11.0 in stage 2.0 (TID 26) in 221 ms on 172.31.26.236 (executor driver) (11/14)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 167, boot = -47, init = 75, finish = 139
+22/10/22 21:43:20 INFO Executor: Finished task 12.0 in stage 2.0 (TID 27). 994404 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 12.0 in stage 2.0 (TID 27) in 179 ms on 172.31.26.236 (executor driver) (12/14)
+22/10/22 21:43:20 INFO TransportClientFactory: Successfully created connection to /172.31.26.236:46611 after 114 ms (0 ms spent in bootstraps)
+22/10/22 21:43:20 INFO PythonRunner: Times: total = 188, boot = -130, init = 168, finish = 150
+22/10/22 21:43:20 INFO Executor: Finished task 13.0 in stage 2.0 (TID 28). 1007798 bytes result sent to driver
+22/10/22 21:43:20 INFO TaskSetManager: Finished task 13.0 in stage 2.0 (TID 28) in 255 ms on 172.31.26.236 (executor driver) (13/14)
+22/10/22 21:43:21 INFO TaskSetManager: Finished task 5.0 in stage 2.0 (TID 20) in 799 ms on 172.31.26.236 (executor driver) (14/14)
+22/10/22 21:43:21 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+22/10/22 21:43:21 INFO DAGScheduler: ResultStage 2 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24) finished in 0.819 s
+22/10/22 21:43:21 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:21 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+22/10/22 21:43:21 INFO DAGScheduler: Job 1 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:24, took 5.614131 s
+22/10/22 21:43:21 INFO BlockManagerInfo: Removed taskresult_20 on 172.31.26.236:46611 in memory (size: 1048.3 KiB, free: 366.2 MiB)
+22/10/22 21:43:21 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 293.9 KiB, free 365.4 MiB)
+22/10/22 21:43:21 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 365.3 MiB)
+22/10/22 21:43:21 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.31.26.236:46611 (size: 27.0 KiB, free: 366.2 MiB)
+22/10/22 21:43:21 INFO SparkContext: Created broadcast 5 from textFile at NativeMethodAccessorImpl.java:0
+22/10/22 21:43:22 INFO FileInputFormat: Total input files to process : 1
+22/10/22 21:43:22 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54
+22/10/22 21:43:22 INFO DAGScheduler: Got job 2 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54) with 66 output partitions
+22/10/22 21:43:22 INFO DAGScheduler: Final stage: ResultStage 3 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54)
+22/10/22 21:43:22 INFO DAGScheduler: Parents of final stage: List()
+22/10/22 21:43:22 INFO DAGScheduler: Missing parents: List()
+22/10/22 21:43:22 INFO DAGScheduler: Submitting ResultStage 3 (PythonRDD[12] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54), which has no missing parents
+22/10/22 21:43:22 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 7.3 KiB, free 365.3 MiB)
+22/10/22 21:43:22 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.4 KiB, free 365.3 MiB)
+22/10/22 21:43:22 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.31.26.236:46611 (size: 4.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:22 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:22 INFO DAGScheduler: Submitting 66 missing tasks from ResultStage 3 (PythonRDD[12] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+22/10/22 21:43:22 INFO TaskSchedulerImpl: Adding task set 3.0 with 66 tasks resource profile 0
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 29) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 30) (172.31.26.236, executor driver, partition 1, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 31) (172.31.26.236, executor driver, partition 2, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 32) (172.31.26.236, executor driver, partition 3, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 4.0 in stage 3.0 (TID 33) (172.31.26.236, executor driver, partition 4, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 5.0 in stage 3.0 (TID 34) (172.31.26.236, executor driver, partition 5, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 6.0 in stage 3.0 (TID 35) (172.31.26.236, executor driver, partition 6, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO TaskSetManager: Starting task 7.0 in stage 3.0 (TID 36) (172.31.26.236, executor driver, partition 7, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:22 INFO Executor: Running task 1.0 in stage 3.0 (TID 30)
+22/10/22 21:43:22 INFO Executor: Running task 3.0 in stage 3.0 (TID 32)
+22/10/22 21:43:22 INFO Executor: Running task 0.0 in stage 3.0 (TID 29)
+22/10/22 21:43:22 INFO Executor: Running task 4.0 in stage 3.0 (TID 33)
+22/10/22 21:43:22 INFO Executor: Running task 2.0 in stage 3.0 (TID 31)
+22/10/22 21:43:22 INFO Executor: Running task 5.0 in stage 3.0 (TID 34)
+22/10/22 21:43:22 INFO Executor: Running task 6.0 in stage 3.0 (TID 35)
+22/10/22 21:43:22 INFO Executor: Running task 7.0 in stage 3.0 (TID 36)
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:100663296+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:201326592+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:167772160+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:0+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:67108864+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:33554432+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:234881024+33554432
+22/10/22 21:43:22 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:134217728+33554432
+22/10/22 21:43:22 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 172.31.26.236:46611 in memory (size: 5.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:23 INFO PythonRunner: Times: total = 1906, boot = -1057, init = 1128, finish = 1835
+22/10/22 21:43:23 INFO MemoryStore: Block taskresult_36 stored as bytes in memory (estimated size 1767.1 KiB, free 363.6 MiB)
+22/10/22 21:43:23 INFO BlockManagerInfo: Added taskresult_36 in memory on 172.31.26.236:46611 (size: 1767.1 KiB, free: 364.5 MiB)
+22/10/22 21:43:23 INFO Executor: Finished task 7.0 in stage 3.0 (TID 36). 1809551 bytes result sent via BlockManager)
+22/10/22 21:43:23 INFO TaskSetManager: Starting task 8.0 in stage 3.0 (TID 37) (172.31.26.236, executor driver, partition 8, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:24 INFO TaskSetManager: Finished task 7.0 in stage 3.0 (TID 36) in 1989 ms on 172.31.26.236 (executor driver) (1/66)
+22/10/22 21:43:24 INFO Executor: Running task 8.0 in stage 3.0 (TID 37)
+22/10/22 21:43:24 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:268435456+33554432
+22/10/22 21:43:24 INFO BlockManagerInfo: Removed taskresult_36 on 172.31.26.236:46611 in memory (size: 1767.1 KiB, free: 366.2 MiB)
+22/10/22 21:43:24 INFO PythonRunner: Times: total = 2189, boot = -1233, init = 1310, finish = 2112
+22/10/22 21:43:24 INFO MemoryStore: Block taskresult_35 stored as bytes in memory (estimated size 2.5 MiB, free 362.8 MiB)
+22/10/22 21:43:24 INFO BlockManagerInfo: Added taskresult_35 in memory on 172.31.26.236:46611 (size: 2.5 MiB, free: 363.7 MiB)
+22/10/22 21:43:24 INFO Executor: Finished task 6.0 in stage 3.0 (TID 35). 2645935 bytes result sent via BlockManager)
+22/10/22 21:43:24 INFO TaskSetManager: Starting task 9.0 in stage 3.0 (TID 38) (172.31.26.236, executor driver, partition 9, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:24 INFO Executor: Running task 9.0 in stage 3.0 (TID 38)
+22/10/22 21:43:24 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:301989888+33554432
+22/10/22 21:43:24 INFO TaskSetManager: Finished task 6.0 in stage 3.0 (TID 35) in 2247 ms on 172.31.26.236 (executor driver) (2/66)
+22/10/22 21:43:24 INFO BlockManagerInfo: Removed taskresult_35 on 172.31.26.236:46611 in memory (size: 2.5 MiB, free: 366.2 MiB)
+22/10/22 21:43:24 INFO PythonRunner: Times: total = 2558, boot = -1164, init = 1228, finish = 2494
+22/10/22 21:43:24 INFO MemoryStore: Block taskresult_33 stored as bytes in memory (estimated size 3.5 MiB, free 361.8 MiB)
+22/10/22 21:43:24 INFO BlockManagerInfo: Added taskresult_33 in memory on 172.31.26.236:46611 (size: 3.5 MiB, free: 362.7 MiB)
+22/10/22 21:43:24 INFO Executor: Finished task 4.0 in stage 3.0 (TID 33). 3674686 bytes result sent via BlockManager)
+22/10/22 21:43:24 INFO TaskSetManager: Starting task 10.0 in stage 3.0 (TID 39) (172.31.26.236, executor driver, partition 10, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:24 INFO Executor: Running task 10.0 in stage 3.0 (TID 39)
+22/10/22 21:43:24 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:335544320+33554432
+22/10/22 21:43:24 INFO TaskSetManager: Finished task 4.0 in stage 3.0 (TID 33) in 2701 ms on 172.31.26.236 (executor driver) (3/66)
+22/10/22 21:43:24 INFO BlockManagerInfo: Removed taskresult_33 on 172.31.26.236:46611 in memory (size: 3.5 MiB, free: 366.2 MiB)
+22/10/22 21:43:24 INFO PythonRunner: Times: total = 2778, boot = -1269, init = 1321, finish = 2726
+22/10/22 21:43:24 INFO MemoryStore: Block taskresult_34 stored as bytes in memory (estimated size 3.1 MiB, free 362.2 MiB)
+22/10/22 21:43:24 INFO BlockManagerInfo: Added taskresult_34 in memory on 172.31.26.236:46611 (size: 3.1 MiB, free: 363.1 MiB)
+22/10/22 21:43:24 INFO Executor: Finished task 5.0 in stage 3.0 (TID 34). 3280024 bytes result sent via BlockManager)
+22/10/22 21:43:24 INFO TaskSetManager: Starting task 11.0 in stage 3.0 (TID 40) (172.31.26.236, executor driver, partition 11, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:24 INFO Executor: Running task 11.0 in stage 3.0 (TID 40)
+22/10/22 21:43:24 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:369098752+33554432
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 2979, boot = -1201, init = 1281, finish = 2899
+22/10/22 21:43:25 INFO TaskSetManager: Finished task 5.0 in stage 3.0 (TID 34) in 3012 ms on 172.31.26.236 (executor driver) (4/66)
+22/10/22 21:43:25 INFO BlockManagerInfo: Removed taskresult_34 on 172.31.26.236:46611 in memory (size: 3.1 MiB, free: 366.2 MiB)
+22/10/22 21:43:25 INFO MemoryStore: Block taskresult_30 stored as bytes in memory (estimated size 3.5 MiB, free 361.8 MiB)
+22/10/22 21:43:25 INFO BlockManagerInfo: Added taskresult_30 in memory on 172.31.26.236:46611 (size: 3.5 MiB, free: 362.7 MiB)
+22/10/22 21:43:25 INFO Executor: Finished task 1.0 in stage 3.0 (TID 30). 3693452 bytes result sent via BlockManager)
+22/10/22 21:43:25 INFO TaskSetManager: Starting task 12.0 in stage 3.0 (TID 41) (172.31.26.236, executor driver, partition 12, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:25 INFO Executor: Running task 12.0 in stage 3.0 (TID 41)
+22/10/22 21:43:25 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:402653184+33554432
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 3201, boot = -1383, init = 1436, finish = 3148
+22/10/22 21:43:25 INFO MemoryStore: Block taskresult_29 stored as bytes in memory (estimated size 3.4 MiB, free 358.4 MiB)
+22/10/22 21:43:25 INFO BlockManagerInfo: Added taskresult_29 in memory on 172.31.26.236:46611 (size: 3.4 MiB, free: 359.3 MiB)
+22/10/22 21:43:25 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 30) in 3290 ms on 172.31.26.236 (executor driver) (5/66)
+22/10/22 21:43:25 INFO Executor: Finished task 0.0 in stage 3.0 (TID 29). 3552929 bytes result sent via BlockManager)
+22/10/22 21:43:25 INFO TaskSetManager: Starting task 13.0 in stage 3.0 (TID 42) (172.31.26.236, executor driver, partition 13, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:25 INFO Executor: Running task 13.0 in stage 3.0 (TID 42)
+22/10/22 21:43:25 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:436207616+33554432
+22/10/22 21:43:25 INFO BlockManagerInfo: Removed taskresult_30 on 172.31.26.236:46611 in memory (size: 3.5 MiB, free: 362.8 MiB)
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 3366, boot = -1239, init = 1330, finish = 3275
+22/10/22 21:43:25 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 29) in 3418 ms on 172.31.26.236 (executor driver) (6/66)
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 3361, boot = -1165, init = 1237, finish = 3289
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 1424, boot = -93, init = 136, finish = 1381
+22/10/22 21:43:25 INFO BlockManagerInfo: Removed taskresult_29 on 172.31.26.236:46611 in memory (size: 3.4 MiB, free: 366.2 MiB)
+22/10/22 21:43:25 INFO MemoryStore: Block taskresult_31 stored as bytes in memory (estimated size 3.7 MiB, free 358.1 MiB)
+22/10/22 21:43:25 INFO BlockManagerInfo: Added taskresult_31 in memory on 172.31.26.236:46611 (size: 3.7 MiB, free: 362.5 MiB)
+22/10/22 21:43:25 INFO MemoryStore: Block taskresult_32 stored as bytes in memory (estimated size 3.5 MiB, free 358.1 MiB)
+22/10/22 21:43:25 INFO Executor: Finished task 2.0 in stage 3.0 (TID 31). 3916459 bytes result sent via BlockManager)
+22/10/22 21:43:25 INFO BlockManagerInfo: Added taskresult_32 in memory on 172.31.26.236:46611 (size: 3.5 MiB, free: 358.9 MiB)
+22/10/22 21:43:25 INFO Executor: Finished task 3.0 in stage 3.0 (TID 32). 3699026 bytes result sent via BlockManager)
+22/10/22 21:43:25 INFO MemoryStore: Block taskresult_37 stored as bytes in memory (estimated size 1103.3 KiB, free 357.0 MiB)
+22/10/22 21:43:25 INFO BlockManagerInfo: Added taskresult_37 in memory on 172.31.26.236:46611 (size: 1103.3 KiB, free: 357.9 MiB)
+22/10/22 21:43:25 INFO TaskSetManager: Starting task 14.0 in stage 3.0 (TID 43) (172.31.26.236, executor driver, partition 14, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:25 INFO TaskSetManager: Starting task 15.0 in stage 3.0 (TID 44) (172.31.26.236, executor driver, partition 15, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:25 INFO Executor: Running task 15.0 in stage 3.0 (TID 44)
+22/10/22 21:43:25 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:503316480+33554432
+22/10/22 21:43:25 INFO Executor: Running task 14.0 in stage 3.0 (TID 43)
+22/10/22 21:43:25 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:469762048+33554432
+22/10/22 21:43:25 INFO Executor: Finished task 8.0 in stage 3.0 (TID 37). 1129759 bytes result sent via BlockManager)
+22/10/22 21:43:25 INFO TaskSetManager: Starting task 16.0 in stage 3.0 (TID 45) (172.31.26.236, executor driver, partition 16, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:25 INFO Executor: Running task 16.0 in stage 3.0 (TID 45)
+22/10/22 21:43:25 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:536870912+33554432
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 1427, boot = -29, init = 85, finish = 1371
+22/10/22 21:43:25 INFO PythonRunner: Times: total = 1103, boot = -19, init = 77, finish = 1045
+22/10/22 21:43:25 INFO Executor: Finished task 10.0 in stage 3.0 (TID 39). 947565 bytes result sent to driver
+22/10/22 21:43:25 INFO TaskSetManager: Starting task 17.0 in stage 3.0 (TID 46) (172.31.26.236, executor driver, partition 17, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:25 INFO Executor: Running task 17.0 in stage 3.0 (TID 46)
+22/10/22 21:43:25 INFO TaskSetManager: Finished task 10.0 in stage 3.0 (TID 39) in 1223 ms on 172.31.26.236 (executor driver) (7/66)
+22/10/22 21:43:25 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:570425344+33554432
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 31) in 3980 ms on 172.31.26.236 (executor driver) (8/66)
+22/10/22 21:43:26 INFO PythonRunner: Times: total = 1119, boot = -109, init = 145, finish = 1083
+22/10/22 21:43:26 INFO BlockManagerInfo: Removed taskresult_31 on 172.31.26.236:46611 in memory (size: 3.7 MiB, free: 361.6 MiB)
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 32) in 4086 ms on 172.31.26.236 (executor driver) (9/66)
+22/10/22 21:43:26 INFO BlockManagerInfo: Removed taskresult_32 on 172.31.26.236:46611 in memory (size: 3.5 MiB, free: 365.1 MiB)
+22/10/22 21:43:26 INFO PythonRunner: Times: total = 937, boot = -128, init = 233, finish = 832
+22/10/22 21:43:26 INFO MemoryStore: Block taskresult_40 stored as bytes in memory (estimated size 1458.2 KiB, free 362.8 MiB)
+22/10/22 21:43:26 INFO BlockManagerInfo: Added taskresult_40 in memory on 172.31.26.236:46611 (size: 1458.2 KiB, free: 363.7 MiB)
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 8.0 in stage 3.0 (TID 37) in 2184 ms on 172.31.26.236 (executor driver) (10/66)
+22/10/22 21:43:26 INFO Executor: Finished task 11.0 in stage 3.0 (TID 40). 1493177 bytes result sent via BlockManager)
+22/10/22 21:43:26 INFO MemoryStore: Block taskresult_38 stored as bytes in memory (estimated size 1568.9 KiB, free 361.3 MiB)
+22/10/22 21:43:26 INFO BlockManagerInfo: Added taskresult_38 in memory on 172.31.26.236:46611 (size: 1568.9 KiB, free: 362.2 MiB)
+22/10/22 21:43:26 INFO Executor: Finished task 9.0 in stage 3.0 (TID 38). 1606507 bytes result sent via BlockManager)
+22/10/22 21:43:26 INFO Executor: Finished task 12.0 in stage 3.0 (TID 41). 1025119 bytes result sent to driver
+22/10/22 21:43:26 INFO TaskSetManager: Starting task 18.0 in stage 3.0 (TID 47) (172.31.26.236, executor driver, partition 18, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:26 INFO TaskSetManager: Starting task 19.0 in stage 3.0 (TID 48) (172.31.26.236, executor driver, partition 19, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:26 INFO TaskSetManager: Starting task 20.0 in stage 3.0 (TID 49) (172.31.26.236, executor driver, partition 20, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:26 INFO Executor: Running task 20.0 in stage 3.0 (TID 49)
+22/10/22 21:43:26 INFO Executor: Running task 18.0 in stage 3.0 (TID 47)
+22/10/22 21:43:26 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:603979776+33554432
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 12.0 in stage 3.0 (TID 41) in 1024 ms on 172.31.26.236 (executor driver) (11/66)
+22/10/22 21:43:26 INFO Executor: Running task 19.0 in stage 3.0 (TID 48)
+22/10/22 21:43:26 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:637534208+33554432
+22/10/22 21:43:26 INFO BlockManagerInfo: Removed taskresult_37 on 172.31.26.236:46611 in memory (size: 1103.3 KiB, free: 363.3 MiB)
+22/10/22 21:43:26 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:671088640+33554432
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 11.0 in stage 3.0 (TID 40) in 1485 ms on 172.31.26.236 (executor driver) (12/66)
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 9.0 in stage 3.0 (TID 38) in 2238 ms on 172.31.26.236 (executor driver) (13/66)
+22/10/22 21:43:26 INFO PythonRunner: Times: total = 1230, boot = -48, init = 249, finish = 1029
+22/10/22 21:43:26 INFO BlockManagerInfo: Removed taskresult_40 on 172.31.26.236:46611 in memory (size: 1458.2 KiB, free: 364.7 MiB)
+22/10/22 21:43:26 INFO MemoryStore: Block taskresult_42 stored as bytes in memory (estimated size 1283.8 KiB, free 362.5 MiB)
+22/10/22 21:43:26 INFO BlockManagerInfo: Added taskresult_42 in memory on 172.31.26.236:46611 (size: 1283.8 KiB, free: 363.4 MiB)
+22/10/22 21:43:26 INFO Executor: Finished task 13.0 in stage 3.0 (TID 42). 1314584 bytes result sent via BlockManager)
+22/10/22 21:43:26 INFO TaskSetManager: Starting task 21.0 in stage 3.0 (TID 50) (172.31.26.236, executor driver, partition 21, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:26 INFO Executor: Running task 21.0 in stage 3.0 (TID 50)
+22/10/22 21:43:26 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:704643072+33554432
+22/10/22 21:43:26 INFO BlockManagerInfo: Removed taskresult_38 on 172.31.26.236:46611 in memory (size: 1568.9 KiB, free: 365.0 MiB)
+22/10/22 21:43:26 INFO TaskSetManager: Finished task 13.0 in stage 3.0 (TID 42) in 1438 ms on 172.31.26.236 (executor driver) (14/66)
+22/10/22 21:43:26 INFO BlockManagerInfo: Removed taskresult_42 on 172.31.26.236:46611 in memory (size: 1283.8 KiB, free: 366.2 MiB)
+22/10/22 21:43:26 INFO PythonRunner: Times: total = 1281, boot = -240, init = 275, finish = 1246
+22/10/22 21:43:27 INFO MemoryStore: Block taskresult_45 stored as bytes in memory (estimated size 1578.2 KiB, free 363.8 MiB)
+22/10/22 21:43:27 INFO BlockManagerInfo: Added taskresult_45 in memory on 172.31.26.236:46611 (size: 1578.2 KiB, free: 364.7 MiB)
+22/10/22 21:43:27 INFO Executor: Finished task 16.0 in stage 3.0 (TID 45). 1616046 bytes result sent via BlockManager)
+22/10/22 21:43:27 INFO TaskSetManager: Starting task 22.0 in stage 3.0 (TID 51) (172.31.26.236, executor driver, partition 22, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:27 INFO Executor: Running task 22.0 in stage 3.0 (TID 51)
+22/10/22 21:43:27 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:738197504+33554432
+22/10/22 21:43:27 INFO PythonRunner: Times: total = 1441, boot = -270, init = 427, finish = 1284
+22/10/22 21:43:27 INFO MemoryStore: Block taskresult_43 stored as bytes in memory (estimated size 1121.2 KiB, free 362.7 MiB)
+22/10/22 21:43:27 INFO BlockManagerInfo: Added taskresult_43 in memory on 172.31.26.236:46611 (size: 1121.2 KiB, free: 363.6 MiB)
+22/10/22 21:43:27 INFO Executor: Finished task 14.0 in stage 3.0 (TID 43). 1148062 bytes result sent via BlockManager)
+22/10/22 21:43:27 INFO TaskSetManager: Starting task 23.0 in stage 3.0 (TID 52) (172.31.26.236, executor driver, partition 23, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:27 INFO Executor: Running task 23.0 in stage 3.0 (TID 52)
+22/10/22 21:43:27 INFO TaskSetManager: Finished task 16.0 in stage 3.0 (TID 45) in 1595 ms on 172.31.26.236 (executor driver) (15/66)
+22/10/22 21:43:27 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:771751936+33554432
+22/10/22 21:43:27 INFO PythonRunner: Times: total = 1355, boot = -146, init = 369, finish = 1132
+22/10/22 21:43:27 INFO TaskSetManager: Finished task 14.0 in stage 3.0 (TID 43) in 1750 ms on 172.31.26.236 (executor driver) (16/66)
+22/10/22 21:43:27 INFO BlockManagerInfo: Removed taskresult_45 on 172.31.26.236:46611 in memory (size: 1578.2 KiB, free: 365.1 MiB)
+22/10/22 21:43:27 INFO Executor: Finished task 17.0 in stage 3.0 (TID 46). 784473 bytes result sent to driver
+22/10/22 21:43:27 INFO TaskSetManager: Starting task 24.0 in stage 3.0 (TID 53) (172.31.26.236, executor driver, partition 24, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:27 INFO TaskSetManager: Finished task 17.0 in stage 3.0 (TID 46) in 1573 ms on 172.31.26.236 (executor driver) (17/66)
+22/10/22 21:43:27 INFO Executor: Running task 24.0 in stage 3.0 (TID 53)
+22/10/22 21:43:27 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:805306368+33554432
+22/10/22 21:43:27 INFO BlockManagerInfo: Removed taskresult_43 on 172.31.26.236:46611 in memory (size: 1121.2 KiB, free: 366.2 MiB)
+22/10/22 21:43:27 INFO PythonRunner: Times: total = 1949, boot = -197, init = 368, finish = 1778
+22/10/22 21:43:27 INFO PythonRunner: Times: total = 1392, boot = -192, init = 340, finish = 1244
+22/10/22 21:43:27 INFO PythonRunner: Times: total = 1551, boot = -443, init = 810, finish = 1184
+22/10/22 21:43:27 INFO Executor: Finished task 15.0 in stage 3.0 (TID 44). 1016903 bytes result sent to driver
+22/10/22 21:43:27 INFO TaskSetManager: Starting task 25.0 in stage 3.0 (TID 54) (172.31.26.236, executor driver, partition 25, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:27 INFO Executor: Finished task 20.0 in stage 3.0 (TID 49). 787624 bytes result sent to driver
+22/10/22 21:43:27 INFO TaskSetManager: Starting task 26.0 in stage 3.0 (TID 55) (172.31.26.236, executor driver, partition 26, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:27 INFO Executor: Finished task 19.0 in stage 3.0 (TID 48). 699615 bytes result sent to driver
+22/10/22 21:43:27 INFO TaskSetManager: Starting task 27.0 in stage 3.0 (TID 56) (172.31.26.236, executor driver, partition 27, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:27 INFO TaskSetManager: Finished task 15.0 in stage 3.0 (TID 44) in 2155 ms on 172.31.26.236 (executor driver) (18/66)
+22/10/22 21:43:27 INFO TaskSetManager: Finished task 19.0 in stage 3.0 (TID 48) in 1625 ms on 172.31.26.236 (executor driver) (19/66)
+22/10/22 21:43:27 INFO Executor: Running task 26.0 in stage 3.0 (TID 55)
+22/10/22 21:43:27 INFO TaskSetManager: Finished task 20.0 in stage 3.0 (TID 49) in 1625 ms on 172.31.26.236 (executor driver) (20/66)
+22/10/22 21:43:27 INFO Executor: Running task 27.0 in stage 3.0 (TID 56)
+22/10/22 21:43:27 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:905969664+33554432
+22/10/22 21:43:27 INFO Executor: Running task 25.0 in stage 3.0 (TID 54)
+22/10/22 21:43:27 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:838860800+33554432
+22/10/22 21:43:27 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:872415232+33554432
+22/10/22 21:43:28 INFO PythonRunner: Times: total = 954, boot = -134, init = 207, finish = 881
+22/10/22 21:43:28 INFO Executor: Finished task 22.0 in stage 3.0 (TID 51). 597257 bytes result sent to driver
+22/10/22 21:43:28 INFO TaskSetManager: Starting task 28.0 in stage 3.0 (TID 57) (172.31.26.236, executor driver, partition 28, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:28 INFO TaskSetManager: Finished task 22.0 in stage 3.0 (TID 51) in 984 ms on 172.31.26.236 (executor driver) (21/66)
+22/10/22 21:43:28 INFO Executor: Running task 28.0 in stage 3.0 (TID 57)
+22/10/22 21:43:28 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:939524096+33554432
+22/10/22 21:43:28 INFO PythonRunner: Times: total = 1886, boot = -237, init = 472, finish = 1651
+22/10/22 21:43:28 INFO PythonRunner: Times: total = 1511, boot = -156, init = 240, finish = 1427
+22/10/22 21:43:28 INFO MemoryStore: Block taskresult_47 stored as bytes in memory (estimated size 1529.8 KiB, free 363.8 MiB)
+22/10/22 21:43:28 INFO BlockManagerInfo: Added taskresult_47 in memory on 172.31.26.236:46611 (size: 1529.8 KiB, free: 364.7 MiB)
+22/10/22 21:43:28 INFO Executor: Finished task 18.0 in stage 3.0 (TID 47). 1566541 bytes result sent via BlockManager)
+22/10/22 21:43:28 INFO TaskSetManager: Starting task 29.0 in stage 3.0 (TID 58) (172.31.26.236, executor driver, partition 29, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:28 INFO MemoryStore: Block taskresult_50 stored as bytes in memory (estimated size 1461.2 KiB, free 362.4 MiB)
+22/10/22 21:43:28 INFO BlockManagerInfo: Added taskresult_50 in memory on 172.31.26.236:46611 (size: 1461.2 KiB, free: 363.3 MiB)
+22/10/22 21:43:28 INFO Executor: Finished task 21.0 in stage 3.0 (TID 50). 1496285 bytes result sent via BlockManager)
+22/10/22 21:43:28 INFO TaskSetManager: Starting task 30.0 in stage 3.0 (TID 59) (172.31.26.236, executor driver, partition 30, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:28 INFO Executor: Running task 30.0 in stage 3.0 (TID 59)
+22/10/22 21:43:28 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1006632960+33554432
+22/10/22 21:43:28 INFO Executor: Running task 29.0 in stage 3.0 (TID 58)
+22/10/22 21:43:28 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:973078528+33554432
+22/10/22 21:43:28 INFO TaskSetManager: Finished task 18.0 in stage 3.0 (TID 47) in 2160 ms on 172.31.26.236 (executor driver) (22/66)
+22/10/22 21:43:28 INFO TaskSetManager: Finished task 21.0 in stage 3.0 (TID 50) in 1784 ms on 172.31.26.236 (executor driver) (23/66)
+22/10/22 21:43:28 INFO BlockManagerInfo: Removed taskresult_50 on 172.31.26.236:46611 in memory (size: 1461.2 KiB, free: 364.7 MiB)
+22/10/22 21:43:28 INFO PythonRunner: Times: total = 1238, boot = -125, init = 271, finish = 1092
+22/10/22 21:43:28 INFO BlockManagerInfo: Removed taskresult_47 on 172.31.26.236:46611 in memory (size: 1529.8 KiB, free: 366.2 MiB)
+22/10/22 21:43:28 INFO Executor: Finished task 23.0 in stage 3.0 (TID 52). 910384 bytes result sent to driver
+22/10/22 21:43:28 INFO TaskSetManager: Starting task 31.0 in stage 3.0 (TID 60) (172.31.26.236, executor driver, partition 31, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:28 INFO TaskSetManager: Finished task 23.0 in stage 3.0 (TID 52) in 1501 ms on 172.31.26.236 (executor driver) (24/66)
+22/10/22 21:43:28 INFO Executor: Running task 31.0 in stage 3.0 (TID 60)
+22/10/22 21:43:28 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1040187392+33554432
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1594, boot = -171, init = 234, finish = 1531
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1196, boot = -47, init = 150, finish = 1093
+22/10/22 21:43:29 INFO MemoryStore: Block taskresult_53 stored as bytes in memory (estimated size 1564.5 KiB, free 363.8 MiB)
+22/10/22 21:43:29 INFO BlockManagerInfo: Added taskresult_53 in memory on 172.31.26.236:46611 (size: 1564.5 KiB, free: 364.7 MiB)
+22/10/22 21:43:29 INFO Executor: Finished task 24.0 in stage 3.0 (TID 53). 1602050 bytes result sent via BlockManager)
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 32.0 in stage 3.0 (TID 61) (172.31.26.236, executor driver, partition 32, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO Executor: Running task 32.0 in stage 3.0 (TID 61)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1073741824+33554432
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1456, boot = -123, init = 169, finish = 1410
+22/10/22 21:43:29 INFO Executor: Finished task 25.0 in stage 3.0 (TID 54). 747419 bytes result sent to driver
+22/10/22 21:43:29 INFO Executor: Finished task 27.0 in stage 3.0 (TID 56). 792745 bytes result sent to driver
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 33.0 in stage 3.0 (TID 62) (172.31.26.236, executor driver, partition 33, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1010, boot = -78, init = 87, finish = 1001
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 34.0 in stage 3.0 (TID 63) (172.31.26.236, executor driver, partition 34, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO Executor: Running task 33.0 in stage 3.0 (TID 62)
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 27.0 in stage 3.0 (TID 56) in 1529 ms on 172.31.26.236 (executor driver) (25/66)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1107296256+33554432
+22/10/22 21:43:29 INFO Executor: Running task 34.0 in stage 3.0 (TID 63)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1140850688+33554432
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 24.0 in stage 3.0 (TID 53) in 1936 ms on 172.31.26.236 (executor driver) (26/66)
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 25.0 in stage 3.0 (TID 54) in 1566 ms on 172.31.26.236 (executor driver) (27/66)
+22/10/22 21:43:29 INFO Executor: Finished task 30.0 in stage 3.0 (TID 59). 433377 bytes result sent to driver
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 35.0 in stage 3.0 (TID 64) (172.31.26.236, executor driver, partition 35, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 30.0 in stage 3.0 (TID 59) in 1151 ms on 172.31.26.236 (executor driver) (28/66)
+22/10/22 21:43:29 INFO Executor: Running task 35.0 in stage 3.0 (TID 64)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1174405120+33554432
+22/10/22 21:43:29 INFO BlockManagerInfo: Removed taskresult_53 on 172.31.26.236:46611 in memory (size: 1564.5 KiB, free: 366.2 MiB)
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1870, boot = -73, init = 292, finish = 1651
+22/10/22 21:43:29 INFO MemoryStore: Block taskresult_55 stored as bytes in memory (estimated size 1254.9 KiB, free 364.1 MiB)
+22/10/22 21:43:29 INFO BlockManagerInfo: Added taskresult_55 in memory on 172.31.26.236:46611 (size: 1254.9 KiB, free: 365.0 MiB)
+22/10/22 21:43:29 INFO Executor: Finished task 26.0 in stage 3.0 (TID 55). 1284986 bytes result sent via BlockManager)
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 36.0 in stage 3.0 (TID 65) (172.31.26.236, executor driver, partition 36, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO Executor: Running task 36.0 in stage 3.0 (TID 65)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1207959552+33554432
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1726, boot = -15, init = 65, finish = 1676
+22/10/22 21:43:29 INFO Executor: Finished task 28.0 in stage 3.0 (TID 57). 773104 bytes result sent to driver
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 37.0 in stage 3.0 (TID 66) (172.31.26.236, executor driver, partition 37, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 28.0 in stage 3.0 (TID 57) in 1783 ms on 172.31.26.236 (executor driver) (29/66)
+22/10/22 21:43:29 INFO Executor: Running task 37.0 in stage 3.0 (TID 66)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1241513984+33554432
+22/10/22 21:43:29 INFO PythonRunner: Times: total = 1093, boot = -205, init = 220, finish = 1078
+22/10/22 21:43:29 INFO Executor: Finished task 31.0 in stage 3.0 (TID 60). 787454 bytes result sent to driver
+22/10/22 21:43:29 INFO TaskSetManager: Starting task 38.0 in stage 3.0 (TID 67) (172.31.26.236, executor driver, partition 38, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 31.0 in stage 3.0 (TID 60) in 1198 ms on 172.31.26.236 (executor driver) (30/66)
+22/10/22 21:43:29 INFO TaskSetManager: Finished task 26.0 in stage 3.0 (TID 55) in 2104 ms on 172.31.26.236 (executor driver) (31/66)
+22/10/22 21:43:29 INFO Executor: Running task 38.0 in stage 3.0 (TID 67)
+22/10/22 21:43:29 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1275068416+33554432
+22/10/22 21:43:29 INFO BlockManagerInfo: Removed taskresult_55 on 172.31.26.236:46611 in memory (size: 1254.9 KiB, free: 366.2 MiB)
+22/10/22 21:43:30 INFO PythonRunner: Times: total = 1072, boot = -319, init = 339, finish = 1052
+22/10/22 21:43:30 INFO Executor: Finished task 33.0 in stage 3.0 (TID 62). 494068 bytes result sent to driver
+22/10/22 21:43:30 INFO TaskSetManager: Starting task 39.0 in stage 3.0 (TID 68) (172.31.26.236, executor driver, partition 39, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:30 INFO TaskSetManager: Finished task 33.0 in stage 3.0 (TID 62) in 1097 ms on 172.31.26.236 (executor driver) (32/66)
+22/10/22 21:43:30 INFO PythonRunner: Times: total = 2113, boot = -60, init = 98, finish = 2075
+22/10/22 21:43:30 INFO Executor: Running task 39.0 in stage 3.0 (TID 68)
+22/10/22 21:43:30 INFO MemoryStore: Block taskresult_58 stored as bytes in memory (estimated size 1693.3 KiB, free 363.7 MiB)
+22/10/22 21:43:30 INFO BlockManagerInfo: Added taskresult_58 in memory on 172.31.26.236:46611 (size: 1693.3 KiB, free: 364.6 MiB)
+22/10/22 21:43:30 INFO Executor: Finished task 29.0 in stage 3.0 (TID 58). 1733978 bytes result sent via BlockManager)
+22/10/22 21:43:30 INFO TaskSetManager: Starting task 40.0 in stage 3.0 (TID 69) (172.31.26.236, executor driver, partition 40, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:30 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1308622848+33554432
+22/10/22 21:43:30 INFO Executor: Running task 40.0 in stage 3.0 (TID 69)
+22/10/22 21:43:30 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1342177280+33554432
+22/10/22 21:43:30 INFO TaskSetManager: Finished task 29.0 in stage 3.0 (TID 58) in 2247 ms on 172.31.26.236 (executor driver) (33/66)
+22/10/22 21:43:30 INFO BlockManagerInfo: Removed taskresult_58 on 172.31.26.236:46611 in memory (size: 1693.3 KiB, free: 366.2 MiB)
+22/10/22 21:43:30 INFO PythonRunner: Times: total = 1245, boot = -70, init = 200, finish = 1115
+22/10/22 21:43:30 INFO Executor: Finished task 34.0 in stage 3.0 (TID 63). 851354 bytes result sent to driver
+22/10/22 21:43:30 INFO TaskSetManager: Starting task 41.0 in stage 3.0 (TID 70) (172.31.26.236, executor driver, partition 41, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:30 INFO TaskSetManager: Finished task 34.0 in stage 3.0 (TID 63) in 1333 ms on 172.31.26.236 (executor driver) (34/66)
+22/10/22 21:43:30 INFO PythonRunner: Times: total = 1604, boot = -11, init = 34, finish = 1581
+22/10/22 21:43:30 INFO MemoryStore: Block taskresult_61 stored as bytes in memory (estimated size 1630.5 KiB, free 363.7 MiB)
+22/10/22 21:43:30 INFO BlockManagerInfo: Added taskresult_61 in memory on 172.31.26.236:46611 (size: 1630.5 KiB, free: 364.6 MiB)
+22/10/22 21:43:30 INFO Executor: Running task 41.0 in stage 3.0 (TID 70)
+22/10/22 21:43:30 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1375731712+33554432
+22/10/22 21:43:30 INFO Executor: Finished task 32.0 in stage 3.0 (TID 61). 1669618 bytes result sent via BlockManager)
+22/10/22 21:43:30 INFO TaskSetManager: Starting task 42.0 in stage 3.0 (TID 71) (172.31.26.236, executor driver, partition 42, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:30 INFO Executor: Running task 42.0 in stage 3.0 (TID 71)
+22/10/22 21:43:30 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1409286144+33554432
+22/10/22 21:43:30 INFO TaskSetManager: Finished task 32.0 in stage 3.0 (TID 61) in 1708 ms on 172.31.26.236 (executor driver) (35/66)
+22/10/22 21:43:30 INFO BlockManagerInfo: Removed taskresult_61 on 172.31.26.236:46611 in memory (size: 1630.5 KiB, free: 366.2 MiB)
+22/10/22 21:43:30 INFO PythonRunner: Times: total = 1147, boot = -28, init = 47, finish = 1128
+22/10/22 21:43:30 INFO Executor: Finished task 36.0 in stage 3.0 (TID 65). 563352 bytes result sent to driver
+22/10/22 21:43:30 INFO TaskSetManager: Starting task 43.0 in stage 3.0 (TID 72) (172.31.26.236, executor driver, partition 43, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:30 INFO TaskSetManager: Finished task 36.0 in stage 3.0 (TID 65) in 1216 ms on 172.31.26.236 (executor driver) (36/66)
+22/10/22 21:43:30 INFO Executor: Running task 43.0 in stage 3.0 (TID 72)
+22/10/22 21:43:30 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1442840576+33554432
+22/10/22 21:43:30 INFO PythonRunner: Times: total = 1086, boot = -23, init = 38, finish = 1071
+22/10/22 21:43:30 INFO Executor: Finished task 37.0 in stage 3.0 (TID 66). 913716 bytes result sent to driver
+22/10/22 21:43:30 INFO TaskSetManager: Starting task 44.0 in stage 3.0 (TID 73) (172.31.26.236, executor driver, partition 44, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:30 INFO TaskSetManager: Finished task 37.0 in stage 3.0 (TID 66) in 1103 ms on 172.31.26.236 (executor driver) (37/66)
+22/10/22 21:43:30 INFO Executor: Running task 44.0 in stage 3.0 (TID 73)
+22/10/22 21:43:30 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1476395008+33554432
+22/10/22 21:43:31 INFO PythonRunner: Times: total = 1582, boot = -106, init = 147, finish = 1541
+22/10/22 21:43:31 INFO MemoryStore: Block taskresult_64 stored as bytes in memory (estimated size 1521.0 KiB, free 363.8 MiB)
+22/10/22 21:43:31 INFO BlockManagerInfo: Added taskresult_64 in memory on 172.31.26.236:46611 (size: 1521.0 KiB, free: 364.7 MiB)
+22/10/22 21:43:31 INFO Executor: Finished task 35.0 in stage 3.0 (TID 64). 1557530 bytes result sent via BlockManager)
+22/10/22 21:43:31 INFO TaskSetManager: Starting task 45.0 in stage 3.0 (TID 74) (172.31.26.236, executor driver, partition 45, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:31 INFO Executor: Running task 45.0 in stage 3.0 (TID 74)
+22/10/22 21:43:31 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1509949440+33554432
+22/10/22 21:43:31 INFO TaskSetManager: Finished task 35.0 in stage 3.0 (TID 64) in 1747 ms on 172.31.26.236 (executor driver) (38/66)
+22/10/22 21:43:31 INFO PythonRunner: Times: total = 1263, boot = -140, init = 164, finish = 1239
+22/10/22 21:43:31 INFO MemoryStore: Block taskresult_67 stored as bytes in memory (estimated size 1390.2 KiB, free 362.5 MiB)
+22/10/22 21:43:31 INFO BlockManagerInfo: Added taskresult_67 in memory on 172.31.26.236:46611 (size: 1390.2 KiB, free: 363.4 MiB)
+22/10/22 21:43:31 INFO Executor: Finished task 38.0 in stage 3.0 (TID 67). 1423569 bytes result sent via BlockManager)
+22/10/22 21:43:31 INFO TaskSetManager: Starting task 46.0 in stage 3.0 (TID 75) (172.31.26.236, executor driver, partition 46, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:31 INFO Executor: Running task 46.0 in stage 3.0 (TID 75)
+22/10/22 21:43:31 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1543503872+33554432
+22/10/22 21:43:31 INFO BlockManagerInfo: Removed taskresult_64 on 172.31.26.236:46611 in memory (size: 1521.0 KiB, free: 364.9 MiB)
+22/10/22 21:43:31 INFO TaskSetManager: Finished task 38.0 in stage 3.0 (TID 67) in 1536 ms on 172.31.26.236 (executor driver) (39/66)
+22/10/22 21:43:31 INFO PythonRunner: Times: total = 1027, boot = -36, init = 83, finish = 980
+22/10/22 21:43:31 INFO Executor: Finished task 39.0 in stage 3.0 (TID 68). 659899 bytes result sent to driver
+22/10/22 21:43:31 INFO PythonRunner: Times: total = 1075, boot = -34, init = 47, finish = 1062
+22/10/22 21:43:31 INFO Executor: Finished task 40.0 in stage 3.0 (TID 69). 932652 bytes result sent to driver
+22/10/22 21:43:31 INFO BlockManagerInfo: Removed taskresult_67 on 172.31.26.236:46611 in memory (size: 1390.2 KiB, free: 366.2 MiB)
+22/10/22 21:43:31 INFO TaskSetManager: Starting task 47.0 in stage 3.0 (TID 76) (172.31.26.236, executor driver, partition 47, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:31 INFO TaskSetManager: Starting task 48.0 in stage 3.0 (TID 77) (172.31.26.236, executor driver, partition 48, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:31 INFO Executor: Running task 48.0 in stage 3.0 (TID 77)
+22/10/22 21:43:31 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1610612736+33554432
+22/10/22 21:43:31 INFO Executor: Running task 47.0 in stage 3.0 (TID 76)
+22/10/22 21:43:31 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1577058304+33554432
+22/10/22 21:43:31 INFO TaskSetManager: Finished task 39.0 in stage 3.0 (TID 68) in 1178 ms on 172.31.26.236 (executor driver) (40/66)
+22/10/22 21:43:31 INFO TaskSetManager: Finished task 40.0 in stage 3.0 (TID 69) in 1170 ms on 172.31.26.236 (executor driver) (41/66)
+22/10/22 21:43:31 INFO PythonRunner: Times: total = 1166, boot = 21, init = 95, finish = 1050
+22/10/22 21:43:31 INFO Executor: Finished task 42.0 in stage 3.0 (TID 71). 646114 bytes result sent to driver
+22/10/22 21:43:31 INFO TaskSetManager: Starting task 49.0 in stage 3.0 (TID 78) (172.31.26.236, executor driver, partition 49, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:31 INFO Executor: Running task 49.0 in stage 3.0 (TID 78)
+22/10/22 21:43:31 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1644167168+33554432
+22/10/22 21:43:31 INFO TaskSetManager: Finished task 42.0 in stage 3.0 (TID 71) in 1180 ms on 172.31.26.236 (executor driver) (42/66)
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 1342, boot = -94, init = 202, finish = 1234
+22/10/22 21:43:32 INFO MemoryStore: Block taskresult_70 stored as bytes in memory (estimated size 1294.7 KiB, free 364.1 MiB)
+22/10/22 21:43:32 INFO BlockManagerInfo: Added taskresult_70 in memory on 172.31.26.236:46611 (size: 1294.7 KiB, free: 364.9 MiB)
+22/10/22 21:43:32 INFO Executor: Finished task 41.0 in stage 3.0 (TID 70). 1325783 bytes result sent via BlockManager)
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 50.0 in stage 3.0 (TID 79) (172.31.26.236, executor driver, partition 50, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 41.0 in stage 3.0 (TID 70) in 1476 ms on 172.31.26.236 (executor driver) (43/66)
+22/10/22 21:43:32 INFO Executor: Running task 50.0 in stage 3.0 (TID 79)
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1677721600+33554432
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 1078, boot = -108, init = 196, finish = 990
+22/10/22 21:43:32 INFO Executor: Finished task 45.0 in stage 3.0 (TID 74). 760782 bytes result sent to driver
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 51.0 in stage 3.0 (TID 80) (172.31.26.236, executor driver, partition 51, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 45.0 in stage 3.0 (TID 74) in 1157 ms on 172.31.26.236 (executor driver) (44/66)
+22/10/22 21:43:32 INFO Executor: Running task 51.0 in stage 3.0 (TID 80)
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1711276032+33554432
+22/10/22 21:43:32 INFO BlockManagerInfo: Removed taskresult_70 on 172.31.26.236:46611 in memory (size: 1294.7 KiB, free: 366.2 MiB)
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 1396, boot = -16, init = 45, finish = 1367
+22/10/22 21:43:32 INFO Executor: Finished task 43.0 in stage 3.0 (TID 72). 1007956 bytes result sent to driver
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 52.0 in stage 3.0 (TID 81) (172.31.26.236, executor driver, partition 52, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 43.0 in stage 3.0 (TID 72) in 1438 ms on 172.31.26.236 (executor driver) (45/66)
+22/10/22 21:43:32 INFO Executor: Running task 52.0 in stage 3.0 (TID 81)
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1744830464+33554432
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 1539, boot = 18, init = 9, finish = 1512
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 954, boot = -78, init = 105, finish = 927
+22/10/22 21:43:32 INFO Executor: Finished task 48.0 in stage 3.0 (TID 77). 704384 bytes result sent to driver
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 53.0 in stage 3.0 (TID 82) (172.31.26.236, executor driver, partition 53, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO MemoryStore: Block taskresult_73 stored as bytes in memory (estimated size 1236.9 KiB, free 364.1 MiB)
+22/10/22 21:43:32 INFO BlockManagerInfo: Added taskresult_73 in memory on 172.31.26.236:46611 (size: 1236.9 KiB, free: 365.0 MiB)
+22/10/22 21:43:32 INFO Executor: Finished task 44.0 in stage 3.0 (TID 73). 1266612 bytes result sent via BlockManager)
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 48.0 in stage 3.0 (TID 77) in 965 ms on 172.31.26.236 (executor driver) (46/66)
+22/10/22 21:43:32 INFO Executor: Running task 53.0 in stage 3.0 (TID 82)
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 54.0 in stage 3.0 (TID 83) (172.31.26.236, executor driver, partition 54, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1778384896+33554432
+22/10/22 21:43:32 INFO Executor: Running task 54.0 in stage 3.0 (TID 83)
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 44.0 in stage 3.0 (TID 73) in 1655 ms on 172.31.26.236 (executor driver) (47/66)
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1811939328+33554432
+22/10/22 21:43:32 INFO BlockManagerInfo: Removed taskresult_73 on 172.31.26.236:46611 in memory (size: 1236.9 KiB, free: 366.2 MiB)
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 1360, boot = 12, init = 175, finish = 1173
+22/10/22 21:43:32 INFO Executor: Finished task 46.0 in stage 3.0 (TID 75). 907806 bytes result sent to driver
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 55.0 in stage 3.0 (TID 84) (172.31.26.236, executor driver, partition 55, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 46.0 in stage 3.0 (TID 75) in 1492 ms on 172.31.26.236 (executor driver) (48/66)
+22/10/22 21:43:32 INFO Executor: Running task 55.0 in stage 3.0 (TID 84)
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1845493760+33554432
+22/10/22 21:43:32 INFO PythonRunner: Times: total = 1127, boot = -38, init = 117, finish = 1048
+22/10/22 21:43:32 INFO MemoryStore: Block taskresult_76 stored as bytes in memory (estimated size 1144.8 KiB, free 364.2 MiB)
+22/10/22 21:43:32 INFO BlockManagerInfo: Added taskresult_76 in memory on 172.31.26.236:46611 (size: 1144.8 KiB, free: 365.1 MiB)
+22/10/22 21:43:32 INFO Executor: Finished task 47.0 in stage 3.0 (TID 76). 1172298 bytes result sent via BlockManager)
+22/10/22 21:43:32 INFO TaskSetManager: Starting task 56.0 in stage 3.0 (TID 85) (172.31.26.236, executor driver, partition 56, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:32 INFO Executor: Running task 56.0 in stage 3.0 (TID 85)
+22/10/22 21:43:32 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1879048192+33554432
+22/10/22 21:43:32 INFO TaskSetManager: Finished task 47.0 in stage 3.0 (TID 76) in 1221 ms on 172.31.26.236 (executor driver) (49/66)
+22/10/22 21:43:32 INFO BlockManagerInfo: Removed taskresult_76 on 172.31.26.236:46611 in memory (size: 1144.8 KiB, free: 366.2 MiB)
+22/10/22 21:43:33 INFO PythonRunner: Times: total = 981, boot = 24, init = 61, finish = 896
+22/10/22 21:43:33 INFO Executor: Finished task 51.0 in stage 3.0 (TID 80). 702134 bytes result sent to driver
+22/10/22 21:43:33 INFO TaskSetManager: Starting task 57.0 in stage 3.0 (TID 86) (172.31.26.236, executor driver, partition 57, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:33 INFO TaskSetManager: Finished task 51.0 in stage 3.0 (TID 80) in 1017 ms on 172.31.26.236 (executor driver) (50/66)
+22/10/22 21:43:33 INFO Executor: Running task 57.0 in stage 3.0 (TID 86)
+22/10/22 21:43:33 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1912602624+33554432
+22/10/22 21:43:33 INFO PythonRunner: Times: total = 1381, boot = 6, init = 25, finish = 1350
+22/10/22 21:43:33 INFO Executor: Finished task 49.0 in stage 3.0 (TID 78). 1028667 bytes result sent to driver
+22/10/22 21:43:33 INFO TaskSetManager: Starting task 58.0 in stage 3.0 (TID 87) (172.31.26.236, executor driver, partition 58, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:33 INFO TaskSetManager: Finished task 49.0 in stage 3.0 (TID 78) in 1398 ms on 172.31.26.236 (executor driver) (51/66)
+22/10/22 21:43:33 INFO Executor: Running task 58.0 in stage 3.0 (TID 87)
+22/10/22 21:43:33 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1946157056+33554432
+22/10/22 21:43:33 INFO PythonRunner: Times: total = 1161, boot = -20, init = 49, finish = 1132
+22/10/22 21:43:33 INFO MemoryStore: Block taskresult_79 stored as bytes in memory (estimated size 1098.5 KiB, free 364.3 MiB)
+22/10/22 21:43:33 INFO BlockManagerInfo: Added taskresult_79 in memory on 172.31.26.236:46611 (size: 1098.5 KiB, free: 365.1 MiB)
+22/10/22 21:43:33 INFO Executor: Finished task 50.0 in stage 3.0 (TID 79). 1124875 bytes result sent via BlockManager)
+22/10/22 21:43:33 INFO TaskSetManager: Starting task 59.0 in stage 3.0 (TID 88) (172.31.26.236, executor driver, partition 59, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:33 INFO Executor: Running task 59.0 in stage 3.0 (TID 88)
+22/10/22 21:43:33 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:1979711488+33554432
+22/10/22 21:43:33 INFO TaskSetManager: Finished task 50.0 in stage 3.0 (TID 79) in 1282 ms on 172.31.26.236 (executor driver) (52/66)
+22/10/22 21:43:33 INFO BlockManagerInfo: Removed taskresult_79 on 172.31.26.236:46611 in memory (size: 1098.5 KiB, free: 366.2 MiB)
+22/10/22 21:43:33 INFO PythonRunner: Times: total = 1137, boot = -36, init = 69, finish = 1104
+22/10/22 21:43:33 INFO MemoryStore: Block taskresult_81 stored as bytes in memory (estimated size 1049.9 KiB, free 364.3 MiB)
+22/10/22 21:43:33 INFO BlockManagerInfo: Added taskresult_81 in memory on 172.31.26.236:46611 (size: 1049.9 KiB, free: 365.2 MiB)
+22/10/22 21:43:33 INFO Executor: Finished task 52.0 in stage 3.0 (TID 81). 1075064 bytes result sent via BlockManager)
+22/10/22 21:43:33 INFO TaskSetManager: Starting task 60.0 in stage 3.0 (TID 89) (172.31.26.236, executor driver, partition 60, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:33 INFO Executor: Running task 60.0 in stage 3.0 (TID 89)
+22/10/22 21:43:33 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:2013265920+33554432
+22/10/22 21:43:33 INFO PythonRunner: Times: total = 842, boot = -69, init = 146, finish = 765
+22/10/22 21:43:33 INFO Executor: Finished task 54.0 in stage 3.0 (TID 83). 691021 bytes result sent to driver
+22/10/22 21:43:33 INFO TaskSetManager: Starting task 61.0 in stage 3.0 (TID 90) (172.31.26.236, executor driver, partition 61, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:33 INFO Executor: Running task 61.0 in stage 3.0 (TID 90)
+22/10/22 21:43:33 INFO TaskSetManager: Finished task 54.0 in stage 3.0 (TID 83) in 1106 ms on 172.31.26.236 (executor driver) (53/66)
+22/10/22 21:43:33 INFO TaskSetManager: Finished task 52.0 in stage 3.0 (TID 81) in 1349 ms on 172.31.26.236 (executor driver) (54/66)
+22/10/22 21:43:33 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:2046820352+33554432
+22/10/22 21:43:33 INFO BlockManagerInfo: Removed taskresult_81 on 172.31.26.236:46611 in memory (size: 1049.9 KiB, free: 366.2 MiB)
+22/10/22 21:43:33 INFO PythonRunner: Times: total = 1207, boot = -109, init = 137, finish = 1179
+22/10/22 21:43:33 INFO MemoryStore: Block taskresult_84 stored as bytes in memory (estimated size 1045.0 KiB, free 364.3 MiB)
+22/10/22 21:43:33 INFO BlockManagerInfo: Added taskresult_84 in memory on 172.31.26.236:46611 (size: 1045.0 KiB, free: 365.2 MiB)
+22/10/22 21:43:33 INFO Executor: Finished task 55.0 in stage 3.0 (TID 84). 1070055 bytes result sent via BlockManager)
+22/10/22 21:43:33 INFO TaskSetManager: Starting task 62.0 in stage 3.0 (TID 91) (172.31.26.236, executor driver, partition 62, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:33 INFO Executor: Running task 62.0 in stage 3.0 (TID 91)
+22/10/22 21:43:33 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:2080374784+33554432
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 55.0 in stage 3.0 (TID 84) in 1266 ms on 172.31.26.236 (executor driver) (55/66)
+22/10/22 21:43:34 INFO BlockManagerInfo: Removed taskresult_84 on 172.31.26.236:46611 in memory (size: 1045.0 KiB, free: 366.2 MiB)
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1465, boot = -120, init = 196, finish = 1389
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1293, boot = -44, init = 93, finish = 1244
+22/10/22 21:43:34 INFO MemoryStore: Block taskresult_82 stored as bytes in memory (estimated size 1070.8 KiB, free 364.3 MiB)
+22/10/22 21:43:34 INFO MemoryStore: Block taskresult_85 stored as bytes in memory (estimated size 1114.5 KiB, free 363.2 MiB)
+22/10/22 21:43:34 INFO BlockManagerInfo: Added taskresult_82 in memory on 172.31.26.236:46611 (size: 1070.8 KiB, free: 365.2 MiB)
+22/10/22 21:43:34 INFO BlockManagerInfo: Added taskresult_85 in memory on 172.31.26.236:46611 (size: 1114.5 KiB, free: 364.1 MiB)
+22/10/22 21:43:34 INFO Executor: Finished task 53.0 in stage 3.0 (TID 82). 1096464 bytes result sent via BlockManager)
+22/10/22 21:43:34 INFO TaskSetManager: Starting task 63.0 in stage 3.0 (TID 92) (172.31.26.236, executor driver, partition 63, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:34 INFO Executor: Finished task 56.0 in stage 3.0 (TID 85). 1141251 bytes result sent via BlockManager)
+22/10/22 21:43:34 INFO Executor: Running task 63.0 in stage 3.0 (TID 92)
+22/10/22 21:43:34 INFO TaskSetManager: Starting task 64.0 in stage 3.0 (TID 93) (172.31.26.236, executor driver, partition 64, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:34 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:2113929216+33554432
+22/10/22 21:43:34 INFO Executor: Running task 64.0 in stage 3.0 (TID 93)
+22/10/22 21:43:34 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:2147483648+33554432
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 53.0 in stage 3.0 (TID 82) in 1677 ms on 172.31.26.236 (executor driver) (56/66)
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 56.0 in stage 3.0 (TID 85) in 1467 ms on 172.31.26.236 (executor driver) (57/66)
+22/10/22 21:43:34 INFO BlockManagerInfo: Removed taskresult_82 on 172.31.26.236:46611 in memory (size: 1070.8 KiB, free: 365.1 MiB)
+22/10/22 21:43:34 INFO BlockManagerInfo: Removed taskresult_85 on 172.31.26.236:46611 in memory (size: 1114.5 KiB, free: 366.2 MiB)
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1240, boot = -6, init = 20, finish = 1226
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1246, boot = -29, init = 60, finish = 1215
+22/10/22 21:43:34 INFO Executor: Finished task 57.0 in stage 3.0 (TID 86). 684773 bytes result sent to driver
+22/10/22 21:43:34 INFO MemoryStore: Block taskresult_87 stored as bytes in memory (estimated size 1083.5 KiB, free 364.3 MiB)
+22/10/22 21:43:34 INFO BlockManagerInfo: Added taskresult_87 in memory on 172.31.26.236:46611 (size: 1083.5 KiB, free: 365.2 MiB)
+22/10/22 21:43:34 INFO TaskSetManager: Starting task 65.0 in stage 3.0 (TID 94) (172.31.26.236, executor driver, partition 65, PROCESS_LOCAL, 4580 bytes) taskResourceAssignments Map()
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 57.0 in stage 3.0 (TID 86) in 1316 ms on 172.31.26.236 (executor driver) (58/66)
+22/10/22 21:43:34 INFO Executor: Running task 65.0 in stage 3.0 (TID 94)
+22/10/22 21:43:34 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/user.json:2181038080+7447390
+22/10/22 21:43:34 INFO Executor: Finished task 58.0 in stage 3.0 (TID 87). 1109456 bytes result sent via BlockManager)
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1153, boot = -8, init = 86, finish = 1075
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 58.0 in stage 3.0 (TID 87) in 1440 ms on 172.31.26.236 (executor driver) (59/66)
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1353, boot = -62, init = 76, finish = 1339
+22/10/22 21:43:34 INFO Executor: Finished task 60.0 in stage 3.0 (TID 89). 699151 bytes result sent to driver
+22/10/22 21:43:34 INFO BlockManagerInfo: Removed taskresult_87 on 172.31.26.236:46611 in memory (size: 1083.5 KiB, free: 366.2 MiB)
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 60.0 in stage 3.0 (TID 89) in 1263 ms on 172.31.26.236 (executor driver) (60/66)
+22/10/22 21:43:34 INFO MemoryStore: Block taskresult_88 stored as bytes in memory (estimated size 1039.9 KiB, free 364.3 MiB)
+22/10/22 21:43:34 INFO BlockManagerInfo: Added taskresult_88 in memory on 172.31.26.236:46611 (size: 1039.9 KiB, free: 365.2 MiB)
+22/10/22 21:43:34 INFO Executor: Finished task 59.0 in stage 3.0 (TID 88). 1064822 bytes result sent via BlockManager)
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 59.0 in stage 3.0 (TID 88) in 1474 ms on 172.31.26.236 (executor driver) (61/66)
+22/10/22 21:43:34 INFO BlockManagerInfo: Removed taskresult_88 on 172.31.26.236:46611 in memory (size: 1039.9 KiB, free: 366.2 MiB)
+22/10/22 21:43:34 INFO PythonRunner: Times: total = 1217, boot = -216, init = 265, finish = 1168
+22/10/22 21:43:34 INFO MemoryStore: Block taskresult_90 stored as bytes in memory (estimated size 1163.4 KiB, free 364.2 MiB)
+22/10/22 21:43:34 INFO BlockManagerInfo: Added taskresult_90 in memory on 172.31.26.236:46611 (size: 1163.4 KiB, free: 365.1 MiB)
+22/10/22 21:43:34 INFO Executor: Finished task 61.0 in stage 3.0 (TID 90). 1191308 bytes result sent via BlockManager)
+22/10/22 21:43:34 INFO TaskSetManager: Finished task 61.0 in stage 3.0 (TID 90) in 1290 ms on 172.31.26.236 (executor driver) (62/66)
+22/10/22 21:43:34 INFO BlockManagerInfo: Removed taskresult_90 on 172.31.26.236:46611 in memory (size: 1163.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:35 INFO PythonRunner: Times: total = 427, boot = -70, init = 81, finish = 416
+22/10/22 21:43:35 INFO Executor: Finished task 65.0 in stage 3.0 (TID 94). 716482 bytes result sent to driver
+22/10/22 21:43:35 INFO TaskSetManager: Finished task 65.0 in stage 3.0 (TID 94) in 468 ms on 172.31.26.236 (executor driver) (63/66)
+22/10/22 21:43:35 INFO PythonRunner: Times: total = 814, boot = -156, init = 213, finish = 757
+22/10/22 21:43:35 INFO Executor: Finished task 63.0 in stage 3.0 (TID 92). 862551 bytes result sent to driver
+22/10/22 21:43:35 INFO PythonRunner: Times: total = 1044, boot = -5, init = 36, finish = 1013
+22/10/22 21:43:35 INFO TaskSetManager: Finished task 63.0 in stage 3.0 (TID 92) in 945 ms on 172.31.26.236 (executor driver) (64/66)
+22/10/22 21:43:35 INFO Executor: Finished task 62.0 in stage 3.0 (TID 91). 990229 bytes result sent to driver
+22/10/22 21:43:35 INFO TaskSetManager: Finished task 62.0 in stage 3.0 (TID 91) in 1118 ms on 172.31.26.236 (executor driver) (65/66)
+22/10/22 21:43:35 INFO PythonRunner: Times: total = 951, boot = -104, init = 183, finish = 872
+22/10/22 21:43:35 INFO Executor: Finished task 64.0 in stage 3.0 (TID 93). 899646 bytes result sent to driver
+22/10/22 21:43:35 INFO TaskSetManager: Finished task 64.0 in stage 3.0 (TID 93) in 1022 ms on 172.31.26.236 (executor driver) (66/66)
+22/10/22 21:43:35 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+22/10/22 21:43:35 INFO DAGScheduler: ResultStage 3 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54) finished in 13.159 s
+22/10/22 21:43:35 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+22/10/22 21:43:35 INFO DAGScheduler: Job 2 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:54, took 13.169914 s
+22/10/22 21:43:37 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 293.9 KiB, free 365.0 MiB)
+22/10/22 21:43:37 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 365.0 MiB)
+22/10/22 21:43:37 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 172.31.26.236:46611 (size: 27.0 KiB, free: 366.2 MiB)
+22/10/22 21:43:37 INFO SparkContext: Created broadcast 7 from textFile at NativeMethodAccessorImpl.java:0
+22/10/22 21:43:37 INFO FileInputFormat: Total input files to process : 1
+22/10/22 21:43:37 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60
+22/10/22 21:43:37 INFO DAGScheduler: Got job 3 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60) with 5 output partitions
+22/10/22 21:43:37 INFO DAGScheduler: Final stage: ResultStage 4 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60)
+22/10/22 21:43:37 INFO DAGScheduler: Parents of final stage: List()
+22/10/22 21:43:37 INFO DAGScheduler: Missing parents: List()
+22/10/22 21:43:37 INFO DAGScheduler: Submitting ResultStage 4 (PythonRDD[15] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60), which has no missing parents
+22/10/22 21:43:37 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 7.2 KiB, free 365.0 MiB)
+22/10/22 21:43:37 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.4 KiB, free 365.0 MiB)
+22/10/22 21:43:37 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 172.31.26.236:46611 (size: 4.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:37 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:37 INFO DAGScheduler: Submitting 5 missing tasks from ResultStage 4 (PythonRDD[15] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4))
+22/10/22 21:43:37 INFO TaskSchedulerImpl: Adding task set 4.0 with 5 tasks resource profile 0
+22/10/22 21:43:37 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 95) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4584 bytes) taskResourceAssignments Map()
+22/10/22 21:43:37 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 96) (172.31.26.236, executor driver, partition 1, PROCESS_LOCAL, 4584 bytes) taskResourceAssignments Map()
+22/10/22 21:43:37 INFO TaskSetManager: Starting task 2.0 in stage 4.0 (TID 97) (172.31.26.236, executor driver, partition 2, PROCESS_LOCAL, 4584 bytes) taskResourceAssignments Map()
+22/10/22 21:43:37 INFO TaskSetManager: Starting task 3.0 in stage 4.0 (TID 98) (172.31.26.236, executor driver, partition 3, PROCESS_LOCAL, 4584 bytes) taskResourceAssignments Map()
+22/10/22 21:43:37 INFO TaskSetManager: Starting task 4.0 in stage 4.0 (TID 99) (172.31.26.236, executor driver, partition 4, PROCESS_LOCAL, 4584 bytes) taskResourceAssignments Map()
+22/10/22 21:43:37 INFO Executor: Running task 0.0 in stage 4.0 (TID 95)
+22/10/22 21:43:37 INFO Executor: Running task 1.0 in stage 4.0 (TID 96)
+22/10/22 21:43:37 INFO Executor: Running task 3.0 in stage 4.0 (TID 98)
+22/10/22 21:43:37 INFO Executor: Running task 4.0 in stage 4.0 (TID 99)
+22/10/22 21:43:37 INFO Executor: Running task 2.0 in stage 4.0 (TID 97)
+22/10/22 21:43:37 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/business.json:33554432+33554432
+22/10/22 21:43:37 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/business.json:67108864+33554432
+22/10/22 21:43:37 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/business.json:134217728+12156370
+22/10/22 21:43:37 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/business.json:100663296+33554432
+22/10/22 21:43:37 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/business.json:0+33554432
+22/10/22 21:43:38 INFO PythonRunner: Times: total = 794, boot = -2510, init = 2643, finish = 661
+22/10/22 21:43:38 INFO Executor: Finished task 4.0 in stage 4.0 (TID 99). 740682 bytes result sent to driver
+22/10/22 21:43:38 INFO TaskSetManager: Finished task 4.0 in stage 4.0 (TID 99) in 816 ms on 172.31.26.236 (executor driver) (1/5)
+22/10/22 21:43:38 INFO PythonRunner: Times: total = 1397, boot = -2227, init = 2371, finish = 1253
+22/10/22 21:43:38 INFO MemoryStore: Block taskresult_95 stored as bytes in memory (estimated size 1989.4 KiB, free 363.1 MiB)
+22/10/22 21:43:38 INFO BlockManagerInfo: Added taskresult_95 in memory on 172.31.26.236:46611 (size: 1989.4 KiB, free: 364.2 MiB)
+22/10/22 21:43:38 INFO Executor: Finished task 0.0 in stage 4.0 (TID 95). 2037159 bytes result sent via BlockManager)
+22/10/22 21:43:38 INFO BlockManagerInfo: Removed taskresult_95 on 172.31.26.236:46611 in memory (size: 1989.4 KiB, free: 366.2 MiB)
+22/10/22 21:43:38 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 95) in 1435 ms on 172.31.26.236 (executor driver) (2/5)
+22/10/22 21:43:38 INFO PythonRunner: Times: total = 1529, boot = -2339, init = 2358, finish = 1510
+22/10/22 21:43:38 INFO MemoryStore: Block taskresult_97 stored as bytes in memory (estimated size 2000.1 KiB, free 363.1 MiB)
+22/10/22 21:43:38 INFO BlockManagerInfo: Added taskresult_97 in memory on 172.31.26.236:46611 (size: 2000.1 KiB, free: 364.2 MiB)
+22/10/22 21:43:38 INFO Executor: Finished task 2.0 in stage 4.0 (TID 97). 2048062 bytes result sent via BlockManager)
+22/10/22 21:43:38 INFO TaskSetManager: Finished task 2.0 in stage 4.0 (TID 97) in 1569 ms on 172.31.26.236 (executor driver) (3/5)
+22/10/22 21:43:38 INFO BlockManagerInfo: Removed taskresult_97 on 172.31.26.236:46611 in memory (size: 2000.1 KiB, free: 366.2 MiB)
+22/10/22 21:43:38 INFO PythonRunner: Times: total = 1571, boot = -2752, init = 2761, finish = 1562
+22/10/22 21:43:38 INFO MemoryStore: Block taskresult_96 stored as bytes in memory (estimated size 1993.7 KiB, free 363.1 MiB)
+22/10/22 21:43:38 INFO BlockManagerInfo: Added taskresult_96 in memory on 172.31.26.236:46611 (size: 1993.7 KiB, free: 364.2 MiB)
+22/10/22 21:43:38 INFO Executor: Finished task 1.0 in stage 4.0 (TID 96). 2041550 bytes result sent via BlockManager)
+22/10/22 21:43:38 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 96) in 1598 ms on 172.31.26.236 (executor driver) (4/5)
+22/10/22 21:43:38 INFO BlockManagerInfo: Removed taskresult_96 on 172.31.26.236:46611 in memory (size: 1993.7 KiB, free: 366.2 MiB)
+22/10/22 21:43:38 INFO PythonRunner: Times: total = 1636, boot = -2587, init = 2687, finish = 1536
+22/10/22 21:43:38 INFO MemoryStore: Block taskresult_98 stored as bytes in memory (estimated size 2003.7 KiB, free 363.0 MiB)
+22/10/22 21:43:38 INFO BlockManagerInfo: Added taskresult_98 in memory on 172.31.26.236:46611 (size: 2003.7 KiB, free: 364.2 MiB)
+22/10/22 21:43:38 INFO Executor: Finished task 3.0 in stage 4.0 (TID 98). 2051795 bytes result sent via BlockManager)
+22/10/22 21:43:38 INFO TaskSetManager: Finished task 3.0 in stage 4.0 (TID 98) in 1671 ms on 172.31.26.236 (executor driver) (5/5)
+22/10/22 21:43:38 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool
+22/10/22 21:43:38 INFO BlockManagerInfo: Removed taskresult_98 on 172.31.26.236:46611 in memory (size: 2003.7 KiB, free: 366.2 MiB)
+22/10/22 21:43:38 INFO DAGScheduler: ResultStage 4 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60) finished in 1.683 s
+22/10/22 21:43:38 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+22/10/22 21:43:38 INFO DAGScheduler: Job 3 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:60, took 1.688404 s
+22/10/22 21:43:39 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66
+22/10/22 21:43:39 INFO DAGScheduler: Got job 4 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66) with 2 output partitions
+22/10/22 21:43:39 INFO DAGScheduler: Final stage: ResultStage 5 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66)
+22/10/22 21:43:39 INFO DAGScheduler: Parents of final stage: List()
+22/10/22 21:43:39 INFO DAGScheduler: Missing parents: List()
+22/10/22 21:43:39 INFO DAGScheduler: Submitting ResultStage 5 (PythonRDD[16] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66), which has no missing parents
+22/10/22 21:43:39 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 7.4 KiB, free 365.0 MiB)
+22/10/22 21:43:39 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 365.0 MiB)
+22/10/22 21:43:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 172.31.26.236:46611 (size: 4.5 KiB, free: 366.2 MiB)
+22/10/22 21:43:39 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:39 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 5 (PythonRDD[16] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66) (first 15 tasks are for partitions Vector(0, 1))
+22/10/22 21:43:39 INFO TaskSchedulerImpl: Adding task set 5.0 with 2 tasks resource profile 0
+22/10/22 21:43:39 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 100) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4585 bytes) taskResourceAssignments Map()
+22/10/22 21:43:39 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 101) (172.31.26.236, executor driver, partition 1, PROCESS_LOCAL, 4585 bytes) taskResourceAssignments Map()
+22/10/22 21:43:39 INFO Executor: Running task 0.0 in stage 5.0 (TID 100)
+22/10/22 21:43:39 INFO Executor: Running task 1.0 in stage 5.0 (TID 101)
+22/10/22 21:43:39 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/yelp_train.csv:11396363+11396363
+22/10/22 21:43:39 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/publicdata/yelp_train.csv:0+11396363
+22/10/22 21:43:40 INFO PythonRunner: Times: total = 1137, boot = -4220, init = 4222, finish = 1135
+22/10/22 21:43:40 INFO MemoryStore: Block taskresult_101 stored as bytes in memory (estimated size 13.1 MiB, free 351.9 MiB)
+22/10/22 21:43:40 INFO BlockManagerInfo: Added taskresult_101 in memory on 172.31.26.236:46611 (size: 13.1 MiB, free: 353.1 MiB)
+22/10/22 21:43:40 INFO Executor: Finished task 1.0 in stage 5.0 (TID 101). 13748477 bytes result sent via BlockManager)
+22/10/22 21:43:40 INFO PythonRunner: Times: total = 1191, boot = -4179, init = 4187, finish = 1183
+22/10/22 21:43:40 INFO MemoryStore: Block taskresult_100 stored as bytes in memory (estimated size 13.1 MiB, free 338.8 MiB)
+22/10/22 21:43:40 INFO BlockManagerInfo: Added taskresult_100 in memory on 172.31.26.236:46611 (size: 13.1 MiB, free: 340.0 MiB)
+22/10/22 21:43:40 INFO Executor: Finished task 0.0 in stage 5.0 (TID 100). 13748477 bytes result sent via BlockManager)
+22/10/22 21:43:40 INFO BlockManagerInfo: Removed taskresult_101 on 172.31.26.236:46611 in memory (size: 13.1 MiB, free: 353.1 MiB)
+22/10/22 21:43:40 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 101) in 1293 ms on 172.31.26.236 (executor driver) (1/2)
+22/10/22 21:43:40 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 100) in 1351 ms on 172.31.26.236 (executor driver) (2/2)
+22/10/22 21:43:40 INFO BlockManagerInfo: Removed taskresult_100 on 172.31.26.236:46611 in memory (size: 13.1 MiB, free: 366.2 MiB)
+22/10/22 21:43:40 INFO DAGScheduler: ResultStage 5 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66) finished in 1.356 s
+22/10/22 21:43:40 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:40 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool
+22/10/22 21:43:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+22/10/22 21:43:40 INFO DAGScheduler: Job 4 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:66, took 1.358652 s
+22/10/22 21:43:45 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 293.9 KiB, free 364.7 MiB)
+22/10/22 21:43:45 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 364.7 MiB)
+22/10/22 21:43:45 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.31.26.236:46611 (size: 27.0 KiB, free: 366.1 MiB)
+22/10/22 21:43:45 INFO SparkContext: Created broadcast 10 from textFile at NativeMethodAccessorImpl.java:0
+22/10/22 21:43:45 INFO FileInputFormat: Total input files to process : 1
+22/10/22 21:43:45 INFO SparkContext: Starting job: runJob at PythonRDD.scala:166
+22/10/22 21:43:45 INFO DAGScheduler: Got job 5 (runJob at PythonRDD.scala:166) with 1 output partitions
+22/10/22 21:43:45 INFO DAGScheduler: Final stage: ResultStage 6 (runJob at PythonRDD.scala:166)
+22/10/22 21:43:45 INFO DAGScheduler: Parents of final stage: List()
+22/10/22 21:43:45 INFO DAGScheduler: Missing parents: List()
+22/10/22 21:43:45 INFO DAGScheduler: Submitting ResultStage 6 (PythonRDD[19] at RDD at PythonRDD.scala:53), which has no missing parents
+22/10/22 21:43:45 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 6.8 KiB, free 364.7 MiB)
+22/10/22 21:43:45 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 364.7 MiB)
+22/10/22 21:43:45 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 172.31.26.236:46611 (size: 4.2 KiB, free: 366.1 MiB)
+22/10/22 21:43:45 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (PythonRDD[19] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+22/10/22 21:43:45 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+22/10/22 21:43:45 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 102) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4576 bytes) taskResourceAssignments Map()
+22/10/22 21:43:45 INFO Executor: Running task 0.0 in stage 6.0 (TID 102)
+22/10/22 21:43:45 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/yelp_test_in.csv:0+3454419
+22/10/22 21:43:45 INFO PythonRunner: Times: total = 20, boot = -9962, init = 9982, finish = 0
+22/10/22 21:43:45 INFO Executor: Finished task 0.0 in stage 6.0 (TID 102). 1423 bytes result sent to driver
+22/10/22 21:43:45 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 102) in 28 ms on 172.31.26.236 (executor driver) (1/1)
+22/10/22 21:43:45 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool
+22/10/22 21:43:45 INFO DAGScheduler: ResultStage 6 (runJob at PythonRDD.scala:166) finished in 0.036 s
+22/10/22 21:43:45 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+22/10/22 21:43:45 INFO DAGScheduler: Job 5 finished: runJob at PythonRDD.scala:166, took 0.039395 s
+22/10/22 21:43:45 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106
+22/10/22 21:43:45 INFO DAGScheduler: Got job 6 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106) with 2 output partitions
+22/10/22 21:43:45 INFO DAGScheduler: Final stage: ResultStage 7 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106)
+22/10/22 21:43:45 INFO DAGScheduler: Parents of final stage: List()
+22/10/22 21:43:45 INFO DAGScheduler: Missing parents: List()
+22/10/22 21:43:45 INFO DAGScheduler: Submitting ResultStage 7 (PythonRDD[20] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106), which has no missing parents
+22/10/22 21:43:45 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 7.4 KiB, free 364.7 MiB)
+22/10/22 21:43:45 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 364.7 MiB)
+22/10/22 21:43:45 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 172.31.26.236:46611 (size: 4.5 KiB, free: 366.1 MiB)
+22/10/22 21:43:45 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1388
+22/10/22 21:43:45 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 7 (PythonRDD[20] at collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106) (first 15 tasks are for partitions Vector(0, 1))
+22/10/22 21:43:45 INFO TaskSchedulerImpl: Adding task set 7.0 with 2 tasks resource profile 0
+22/10/22 21:43:45 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 103) (172.31.26.236, executor driver, partition 0, PROCESS_LOCAL, 4576 bytes) taskResourceAssignments Map()
+22/10/22 21:43:45 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 104) (172.31.26.236, executor driver, partition 1, PROCESS_LOCAL, 4576 bytes) taskResourceAssignments Map()
+22/10/22 21:43:45 INFO Executor: Running task 0.0 in stage 7.0 (TID 103)
+22/10/22 21:43:45 INFO Executor: Running task 1.0 in stage 7.0 (TID 104)
+22/10/22 21:43:45 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/yelp_test_in.csv:0+3454419
+22/10/22 21:43:45 INFO HadoopRDD: Input split: file:/mnt/ro/voccontent/gradinglib/ddd_v1_c_KmCO_784550/asn1085235_4/asn1085236_1/asnlib.0/yelp_test_in.csv:3454419+3454420
+22/10/22 21:43:45 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 172.31.26.236:46611 in memory (size: 4.2 KiB, free: 366.1 MiB)
+22/10/22 21:43:45 INFO PythonRunner: Times: total = 333, boot = -6537, init = 6542, finish = 328
+22/10/22 21:43:45 INFO PythonRunner: Times: total = 337, boot = -7146, init = 7155, finish = 328
+22/10/22 21:43:45 INFO MemoryStore: Block taskresult_104 stored as bytes in memory (estimated size 3.8 MiB, free 360.9 MiB)
+22/10/22 21:43:45 INFO BlockManagerInfo: Added taskresult_104 in memory on 172.31.26.236:46611 (size: 3.8 MiB, free: 362.3 MiB)
+22/10/22 21:43:45 INFO Executor: Finished task 1.0 in stage 7.0 (TID 104). 3991343 bytes result sent via BlockManager)
+22/10/22 21:43:45 INFO MemoryStore: Block taskresult_103 stored as bytes in memory (estimated size 3.8 MiB, free 357.1 MiB)
+22/10/22 21:43:45 INFO BlockManagerInfo: Added taskresult_103 in memory on 172.31.26.236:46611 (size: 3.8 MiB, free: 358.5 MiB)
+22/10/22 21:43:45 INFO Executor: Finished task 0.0 in stage 7.0 (TID 103). 3991386 bytes result sent via BlockManager)
+22/10/22 21:43:45 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 104) in 396 ms on 172.31.26.236 (executor driver) (1/2)
+22/10/22 21:43:45 INFO BlockManagerInfo: Removed taskresult_104 on 172.31.26.236:46611 in memory (size: 3.8 MiB, free: 362.3 MiB)
+22/10/22 21:43:45 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 103) in 403 ms on 172.31.26.236 (executor driver) (2/2)
+22/10/22 21:43:45 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool
+22/10/22 21:43:45 INFO DAGScheduler: ResultStage 7 (collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106) finished in 0.407 s
+22/10/22 21:43:45 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/22 21:43:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 7: Stage finished
+22/10/22 21:43:45 INFO DAGScheduler: Job 6 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_f0ed6_37139/asn1085235_4/asn1085236_1/2107122/7/work/task2_2.py:106, took 0.409599 s
+22/10/22 21:43:45 INFO BlockManagerInfo: Removed taskresult_103 on 172.31.26.236:46611 in memory (size: 3.8 MiB, free: 366.1 MiB)
+Duration: 365.700021982193
+22/10/22 21:49:16 INFO SparkUI: Stopped Spark web UI at http://172.31.26.236:4040
+22/10/22 21:49:16 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/10/22 21:49:16 INFO MemoryStore: MemoryStore cleared
+22/10/22 21:49:16 INFO BlockManager: BlockManager stopped
+22/10/22 21:49:16 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/10/22 21:49:16 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/10/22 21:49:16 INFO SparkContext: Successfully stopped SparkContext
+22/10/22 21:49:16 INFO ShutdownHookManager: Shutdown hook called
+22/10/22 21:49:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-3a7e28ba-e842-495f-ad6d-69c352bd43a1/pyspark-7957d9aa-73fb-409f-92fe-333e4810ffb3
+22/10/22 21:49:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-3a7e28ba-e842-495f-ad6d-69c352bd43a1
+22/10/22 21:49:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-687109be-5701-4e8c-a89d-3f35d7793ec1
+22/10/22 21:49:18 WARN Utils: Your hostname, ip-172-31-26-236 resolves to a loopback address: 127.0.0.1; using 172.31.26.236 instead (on interface ens5)
+22/10/22 21:49:18 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/10/22 21:49:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/10/22 21:49:21 INFO SparkContext: Running Spark version 3.1.2
+22/10/22 21:49:21 INFO ResourceUtils: ==============================================================
+22/10/22 21:49:21 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/10/22 21:49:21 INFO ResourceUtils: ==============================================================
+22/10/22 21:49:21 INFO SparkContext: Submitted application: task2_3
+22/10/22 21:49:21 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/10/22 21:49:21 INFO ResourceProfile: Limiting resource is cpu
+22/10/22 21:49:21 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/10/22 21:49:21 INFO SecurityManager: Changing view acls to: ccc_v1_g_f0ed6_37139
+22/10/22 21:49:21 INFO SecurityManager: Changing modify acls to: ccc_v1_g_f0ed6_37139
+22/10/22 21:49:21 INFO SecurityManager: Changing view acls groups to:
+22/10/22 21:49:21 INFO SecurityManager: Changing modify acls groups to:
+22/10/22 21:49:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ccc_v1_g_f0ed6_37139); groups with view permissions: Set(); users with modify permissions: Set(ccc_v1_g_f0ed6_37139); groups with modify permissions: Set()
+22/10/22 21:49:22 INFO Utils: Successfully started service 'sparkDriver' on port 38945.
+22/10/22 21:49:22 INFO SparkEnv: Registering MapOutputTracker
+22/10/22 21:49:22 INFO SparkEnv: Registering BlockManagerMaster
+22/10/22 21:49:22 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/10/22 21:49:22 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/10/22 21:49:22 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/10/22 21:49:22 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-549867de-cb3e-40cb-b5bc-030d974f49fb
+22/10/22 21:49:22 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+22/10/22 21:49:22 INFO SparkEnv: Registering OutputCommitCoordinator
+22/10/22 21:49:22 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/10/22 21:49:23 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.26.236:4040
+22/10/22 21:49:23 INFO Executor: Starting executor ID driver on host 172.31.26.236
+22/10/22 21:49:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40306.
+22/10/22 21:49:23 INFO NettyBlockTransferService: Server created on 172.31.26.236:40306
+22/10/22 21:49:23 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/10/22 21:49:23 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.26.236, 40306, None)
+22/10/22 21:49:23 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.26.236:40306 with 366.3 MiB RAM, BlockManagerId(driver, 172.31.26.236, 40306, None)
+22/10/22 21:49:23 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.26.236, 40306, None)
+22/10/22 21:49:23 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.26.236, 40306, None)
+Duration: 475.8950572013855
+

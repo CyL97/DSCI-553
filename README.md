@@ -18,3 +18,5 @@ Note that for each assignment, a maximum of 10% bonus point could be earn by sub
 ## [Personal Note](DSCI553_Note.pdf)
 This PDF records all my class notes, which contains my personal understanding of all key knowledge of this course. It summarizes all the knowledge that the final exam may cover. You might get a good grade if you read it carefully. My final exam score was 38.25/40, so you can trust this document:smiley:. (*Most of the text inside is in Chinese, sorry for the non-Chinese students*)
 
+## [Competition Project](competition)
+My final score on Val set is **0.8565135387946219**, on test set is **0.9679849269561988**. If you are interested in how I did it, please find it in the competition folder.

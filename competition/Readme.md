@@ -39,6 +39,6 @@ In the test phase, I combined the train and validation data sets for training so
 ### Directly Encoding:
 You can draw a heatmap of the correlation between different features and ratings, then choose the top 10 to 12 features to train and fine-tune your Xgbregressor. The best performance is **0.9758** on Val set. If you train it on both train set and val set, the peroformance will be **0.9138** but you cannot trust it.
 ### LINE Graph Embedding:
-A traditional graph embedding method. The paper is here. You can just replace the HIN2Vec model in my pipeline with LINE model. The best performance is **0.9734** on Val set.
+A traditional graph embedding method. The paper is [here](https://arxiv.org/abs/1503.03578). You can just replace the HIN2Vec model in my pipeline with LINE model. The best performance is **0.9734** on Val set.
 ### Node2Vec Graph Embedding:
-Another traditional graph embedding method. The paper is here. You can also just replace the HIN2Vec model in my pipeline with LINE model. The best performance is **0.9725** on Val set.
+Another traditional graph embedding method. The paper is [here](https://arxiv.org/abs/1607.00653). You can also just replace the HIN2Vec model in my pipeline with LINE model. The best performance is **0.9725** on Val set.

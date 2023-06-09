@@ -1,5 +1,5 @@
 # DSCI-553 (Foundations and Applications of Data Mining) Grade:A
-I shared all my  materials about USC DSCI-553 in this repository, including past quiz, assignments, my note and competition solution. 
+I shared all my materials about USC DSCI-553 in this repository, including past quiz, assignments, my note and competition solution. 
 
 ## Quiz
 I only shared past quiz here. They are not 100% relate to the questions you will face in your quiz, and some of the answers are not correct so please do your best to learn in class instead of pinning your hopes here. If you really need Fall22 quiz questions, please contact me.
